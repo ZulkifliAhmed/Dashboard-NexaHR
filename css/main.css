@@ -337,8 +337,8 @@ main header .userInfo .fa-chevron-down{
 }
 .carts .cart span{
     font-size: 13px;
-   color: var(--success-color);
+    color: var(--success-color);
 }
 .carts .cart span.danger{
-   color: var(--danger-color);
+    color: var(--danger-color);
 }
