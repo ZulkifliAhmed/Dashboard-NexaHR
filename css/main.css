@@ -1,0 +1,51 @@
+
+/* ================= Root ================= */
+:root{
+    --primary-color: #fefefe;
+    --background-color: #f9fafc;
+    --text-color: #64748b;
+    --danger-color: #EF4444;
+    --dark-color: #0F172A;
+    --border-color: #E2E8F0;
+    --bulle-color: #4F46E5;
+    --success-color: #10B981;
+    --warning-clor: #F59E0B;
+
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --main-transition: .3s ease-in-out;
+}
+/* ========== Global Styles ========== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+    line-height: 1.4;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.avatar{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+ 
