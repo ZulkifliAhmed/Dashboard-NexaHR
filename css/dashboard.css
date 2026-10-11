@@ -1,0 +1,31 @@
+/* ========== Titel calendar ========== */
+.dashboard .calendar {
+    box-shadow: var(--shadow);
+}
+.dashboard .calendar input{
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+}
+/* ========== Charts ========== */
+.charts{
+    display: grid;
+    grid-template-columns: 60% auto;
+    gap: 20px;
+    margin: 25px 0;
+}
+.chart{
+    height: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--primary-color);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+.chart p{
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: var(--text-color);
+} 

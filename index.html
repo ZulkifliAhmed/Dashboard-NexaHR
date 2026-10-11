@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/all.min.css">
     <!-- Main style css -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Dashboard style css -->
+    <link rel="stylesheet" href="css/dashboard.css">
     <link rel="icon" href="assets/favicon.png">
     <title>NexaHR</title>
 </head>
@@ -183,11 +185,30 @@
                             </div>
                     </div>
                 </div>
+                 <!-- ========== Charts ==========  -->
+                <div class="charts">
+                    <!-- Employees Overview -->
+                    <div class="chart">
+                        <h3>Employees Overview</h3>
+                        <p>Employee growth over the months</p>
+                        <div id="employeesOverview"></div>
+                    </div>
+                    <!-- Employees by Department -->
+                    <div class="chart">
+                        <h3>Employees by Department</h3>
+                        <p>Distribution of employees across departments</p>
+                        <div id="employeesDepartment"></div>
+                    </div>
+                </div>
             </section>
         </main> 
     </div>
     <!-- Font awesome library -->
     <script src="js/all.min.js"></script>
+    <!-- ApexCharts library -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Dashbord fiel -->
+    <script src="js/dashboard.js"></script>
     <!-- Main js fiel -->
     <script src="js/main.js"></script>
 </body>
