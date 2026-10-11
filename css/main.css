@@ -147,14 +147,14 @@ aside .user a:hover{
     color: var(--bulle-color);
 } 
 /* ========== Main Content ==========  */
-.main{
+main{
     border-radius:0 15px 15px 0;
     background-color: var(--background-color);
     border: 1px solid var(--border-color);
     border-left: 0;
     overflow: hidden;
 }
-.main header{
+main header{
     width: 100%;
     padding: 10px 20px;
     display: flex;
@@ -163,25 +163,25 @@ aside .user a:hover{
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow);
 }
-.main header .left,
-.main header .right,
-.main header .right .userInfo{
+main header .left,
+main header .right,
+main header .right .userInfo{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.main header .left .fa-bars{
+main header .left .fa-bars{
     font-size: 20px;
     cursor: pointer;
     color: var(--dark-color);
 }
-.main header .left .search{
+main header .left .search{
     position: relative;
     width: 250px;
 }
-.main header .left .search input{
+main header .left .search input{
     width: 100%;
     padding: 10px;
     padding-left: 35px;
@@ -191,11 +191,11 @@ aside .user a:hover{
     border: none;
     outline: none;
 }
-.main header .left .search input::placeholder{
+main header .left .search input::placeholder{
     font-size: 14px;
     color: var(--text-color);
 }
-.main header .left .search .fa-sistrix{
+main header .left .search .fa-sistrix{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -205,11 +205,11 @@ aside .user a:hover{
 }
 
 aside nav .sideBarNotifi,
-.main header .right .notifi{
+main header .right .notifi{
     position: relative;
 }
 aside nav .sideBarNotifi::after,
-.main header .right .notifi::after{
+main header .right .notifi::after{
     position: absolute;
     content: "3";
     background-color: var(--danger-color);
@@ -226,7 +226,7 @@ aside nav .sideBarNotifi::after{
     top: 30%;
     left: 90%;
 }
-.main header .right .notifi::after{
+main header .right .notifi::after{
     top: -25%;
     left: 50%;
 }
@@ -235,9 +235,110 @@ aside nav .sideBarNotifi::after{
     cursor: pointer;
     color: var(--dark-color);
 }
-.main header .userInfo .fa-chevron-down{
+main header .userInfo .fa-chevron-down{
     margin-left: -10px;
     font-size: 14px;
     cursor: pointer;
     color: var(--dark-color);
+}
+/* ========== Dashboard ========== */
+.dashboard{
+    padding: 30px 20px;
+}
+.dashboard .titel{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.dashboard .titel .breadcrumb{
+    margin-bottom: 5px;
+    cursor: default;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+.dashboard .titel .breadcrumb a{
+    color: var(--text-color);
+}
+.dashboard .titel h2{
+    text-transform: capitalize; 
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+.dashboard .titel p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    cursor: default;
+}
+.dashboard .titel .add a{
+    padding: 8px 15px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--background-color);
+    background-color: var(--bulle-color);
+    text-transform: capitalize;
+}
+/* ========== Cards ========== */
+.carts,
+.carts .cart{
+    display: flex;
+    align-items: center;
+}
+.carts{
+    justify-content: space-between;
+}
+.carts .cart{
+    min-width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 15px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    cursor: default;
+    box-shadow: var(--shadow);
+}
+.carts .cart .fa-users,
+.carts .cart .fa-user-plus,
+.carts .cart .fa-calendar-days,
+.carts .cart .fa-user-minus{
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+.carts .cart .fa-users{
+    background-color: var(--bulle-color);
+}
+.carts .cart .fa-user-plus{
+    background-color: var(--success-color);
+}
+.carts .cart .fa-calendar-days{
+    background-color: var(--warning-clor);
+}
+.carts .cart .fa-user-minus{
+    background-color: var(--danger-color);
+}
+.carts .cart p{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+.carts .cart .range{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin: 5px 0;
+}
+.carts .cart span{
+    font-size: 13px;
+   color: var(--success-color);
+}
+.carts .cart span.danger{
+   color: var(--danger-color);
 }
