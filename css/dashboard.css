@@ -92,6 +92,72 @@
     color: var(--danger-color);
     cursor: pointer;
 }
-
-
+/* ========== Media Query ==========  */
+/* applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+.charts,
+.box{
+    grid-template-columns: auto 40%;
+    gap: 15px;
+}
+.chart{
+    padding: 15px;
+}
+.chart p{
+    font-weight: 300;
+}
+.box .boxItems{
+    padding: 15px;
+}
+.box .boxItems .employeeItem{
+    padding: 6px 0;
+}
+.box .employeeItem .employeeInfo,
+.box .boxItems .employeeItem .details{
+    gap: 10px;
+}
+.box .boxItems .employeeItem h4{
+    font-size: 13px;
+}
+.box .boxItems .employeeItem p{
+    font-size: 12px;
+}
+.box .boxItems .employeeItem .details{
+    gap: 20px;
+}
+}
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+.dashboard .calendar input{
+    padding: 5px 8px;
+    font-size: 14px;
+}
+.charts,
+.box{
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+}
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+.dashboard .calendar{
+    display: none;
+}
+.chart{
+    padding: 10px;
+}
+.chart p{
+    margin: 10px 0;
+    font-size: 12px;
+}
+.box .boxItems .employeeItem a{
+    font-size: 12px;
+}
+.box .boxItems .employeeItem .titel{
+   display: none;
+}
+.box .boxItems .employeeItem .details {
+    gap: 10px;
+}
+}
  

@@ -60,6 +60,15 @@ aside{
     border-radius: 15px 0 0 15px;
     background-color: var(--dark-color);
 }
+aside .fa-x{
+    font-size: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none;
+}
 aside .logo{
     display: flex;
     justify-content: center;
@@ -100,7 +109,6 @@ aside nav li a{
     display: flex;
     gap: 15px;
     padding: 12px;
-    border-radius: 7px;
     font-size: 19px;
     text-transform: capitalize;
     color: var(--primary-color);
@@ -203,7 +211,6 @@ main header .left .search .fa-sistrix{
     color: var(--text-color);
     cursor: pointer;
 }
-
 aside nav .sideBarNotifi,
 main header .right .notifi{
     position: relative;
@@ -341,4 +348,176 @@ main header .userInfo .fa-chevron-down{
 }
 .carts .cart span.danger{
     color: var(--danger-color);
+}
+/* ========== Media Query ==========  */
+/* applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+.container{
+    grid-template-columns: 200px auto;
+}
+aside .logo span{
+    font-size: 18px;
+}
+aside nav h4{
+    font-size: 14px;
+}
+aside nav li a{
+    padding: 8px 10px;
+    font-size: 17px;
+}
+aside nav li a span{
+    font-size: 13px;
+}
+aside .user{
+    padding: 15px 10px;
+}
+aside .user a{
+    gap: 10px;
+}
+aside .user .name p,
+aside .user .name span{
+    font-size: 12px;
+}
+aside .user a{
+    font-size: 12px;
+}
+.dashboard{
+    padding: 30px 15px;
+}
+.carts{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.carts .cart{
+    min-width: 250px;
+}
+.carts .cart .fa-users,
+.carts .cart .fa-user-plus,
+.carts .cart .fa-calendar-days,
+.carts .cart .fa-user-minus{
+    width: 25px;
+    height: 25px;
+}
+.carts .cart p:last-child{
+    font-size: 8px;
+}
+.carts .cart .range{
+    font-size: 18px;
+}
+}
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+.main header .left .search{
+    width: 200px;
+}
+.dashboard .head h2{
+    font-size: 20px;
+}
+}
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  
+.container{
+    grid-template-columns:  auto;
+    position: relative;
+}
+aside{
+    min-height: 100vh !important;
+    width: 200px;
+    height: 100vh !important;
+    position: fixed;
+    z-index: 999;
+    border-radius: 0 10px 10px 0;
+    transition: var(--main-transition);
+    left: -200px;
+}
+aside .fa-x{
+    display: block;
+}
+aside .logo .logoImg{
+    width: 25px;
+    height: 25px;
+}
+aside .logo span{
+    font-size: 17px;
+    font-weight: 500;
+}
+aside nav{
+    padding-top: 0px;
+}
+aside nav h4{
+    margin: 20px 0 5px 10px;
+    font-size: 14px;
+}
+aside nav li{
+    margin-bottom: 5px;
+}
+aside nav li.active{
+    border-radius: 5px;
+}
+aside nav li a{
+    gap: 8px;
+    padding: 8px;
+    font-size: 16px;
+}
+aside nav li a span{
+    font-size: 14px;
+    font-weight: 300;
+}
+aside .user{
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    border: 0px;
+}
+aside .user .info{
+    display: none;
+}
+}
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+h3 {
+    font-size: 14px;
+}
+main{
+    border-radius: 0;
+}
+main header{
+    padding: 10px;
+}
+main header .left .search{
+    width: 150px;
+}
+main header .left .search input{
+    padding: 5px;
+    padding-left: 30px;
+}
+main header .left .search input::placeholder{
+    font-size: 12px;
+}
+main header .left .search .fa-sistrix{
+    padding-left: 5px;
+}
+aside nav .sideBarNotifi::after,
+main header .right .notifi::after{
+    font-weight: 500;
+    width: 13px;
+    height: 13px;
+}
+.right .notifi .fa-bell{
+    font-size: 15px;
+}
+main header .userInfo .fa-chevron-down{
+    font-size: 12px;
+}
+.dashboard .titel .breadcrumb,
+.dashboard .titel .add{
+   display: none;
+}
+.dashboard .titel h2{
+    font-size: 15px;
+}
+.dashboard .titel p{
+    font-size: 13px;
+}
 }
