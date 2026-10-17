@@ -20,7 +20,9 @@
     <div class="container">
         <!-- ========== Sidebar ========== -->
         <aside>
-            <i class="fa-solid fa-x"></i>
+            <div class="close">
+                <i class="fa-solid fa-x"></i>
+            </div>
             <a href="" class="logo">
                 <div class="logoImg">
                     <img src="assets/logo.png" alt="logo">
@@ -103,7 +105,12 @@
         <main>
             <header>
                 <div class="left">
-                    <i class="fa-solid fa-bars"></i>
+                    <div class="big">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <div class="search">
                         <i class="fa-brands fa-sistrix"></i>
                         <input type="search" placeholder="Search anything...">
@@ -117,7 +124,14 @@
                         <div class="avatar">
                         <img src="assets/avatar.png" alt="admin">
                         </div>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="user-links">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="drop-nav">
+                            <li><a href="">profile</a></li>
+                            <li><a href="">setting</a></li>
+                            <li><a href="">logout</a></li>
+                        </ul>
                     </div>
                 </div>
             </header>
@@ -137,8 +151,8 @@
                         <i class="fa-solid fa-users"></i>
                         <div class="details">
                             <p>total employees</p>
-                            <div class="range">
-                                248
+                            <div class="range" data-range="240">
+                                0
                             </div>
                             <span>
                                 <i class="fa-solid fa-arrow-up"></i>
@@ -150,8 +164,8 @@
                         <i class="fa-solid fa-user-plus"></i>
                         <div class="details">
                             <p>active employees</p>
-                            <div class="range">
-                                221
+                            <div class="range" data-range="221">
+                                0
                             </div>
                             <span>
                                 <i class="fa-solid fa-arrow-up"></i>
@@ -163,8 +177,8 @@
                         <i class="fa-solid fa-calendar-days"></i>
                         <div class="details">
                             <p>on leave</p>
-                            <div class="range">
-                                12
+                            <div class="range" data-range="12">
+                                0
                             </div>
                             <span class="danger">
                                 <i class="fa-solid fa-arrow-down"></i>
@@ -176,8 +190,8 @@
                         <i class="fa-solid fa-user-minus"></i>
                         <div class="details">
                             <p>inactive employees</p>
-                            <div class="range">
-                                15
+                            <div class="range" data-range="15">
+                                0
                             </div>
                             <span class="danger">
                                 <i class="fa-solid fa-arrow-down"></i>
@@ -222,7 +236,13 @@
                             <p class ="titel">development</p>
                             <div class="details">
                                 <p>may 27,2025</p>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <div class="employeeLink">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                                <ul class="moreDetails">
+                                    <li><a href="">eddit</a></li>
+                                    <li><a href="">delete</a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="employeeItem">

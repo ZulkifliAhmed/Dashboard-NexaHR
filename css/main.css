@@ -12,7 +12,7 @@
     --warning-clor: #F59E0B;
 
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    --main-transition: .3s ease-in-out;
+    --main-transition: .7s ease-in-out;
 }
 /* ========== Global Styles ========== */
 *{
@@ -50,15 +50,17 @@ h3 {
 }
 .container{
     display: grid;
-    grid-template-columns: 220px auto;
+    grid-template-columns: auto 1fr;
 }
 /* ========== Sidebar ========== */
 aside{
+    width: 220px;
     min-height: 130vh;
     position: relative;
     padding: 20px 10px;
     border-radius: 15px 0 0 15px;
     background-color: var(--dark-color);
+   transition: var(--main-transition);
 }
 aside .fa-x{
     font-size: 20px;
@@ -154,6 +156,44 @@ aside .user a{
 aside .user a:hover{
     color: var(--bulle-color);
 } 
+/* ========== toggle Sidebar ========== */
+.toggleAside{
+    width: fit-content;
+    border-radius: 0;
+    padding: 30px 10px;
+}
+.toggleAside span{
+    display: none;
+}
+.toggleAside h4{
+    display: none;
+}
+.toggleAside .logo .logoImg{
+    width: 25px;
+    height: 25px;
+}
+.toggleAside nav{
+    padding-top: 20px;
+}
+.toggleAside nav li{
+    margin-bottom: 5px;
+    width: fit-content;
+}
+.toggleAside nav li a{
+    padding: 10px;
+}
+.toggleAside nav .sideBarNotifi::after{
+    top: 50%;
+    left: 35%;
+}
+.toggleAside .user{
+    position: relative;
+    padding: 30px 10px;
+    border: 0px;
+}
+.toggleAside .user .info{
+    display: none;
+}
 /* ========== Main Content ==========  */
 main{
     border-radius:0 15px 15px 0;
@@ -179,11 +219,13 @@ main header .right .userInfo{
     align-items: center;
     gap: 20px;
 }
-
 main header .left .fa-bars{
     font-size: 20px;
     cursor: pointer;
     color: var(--dark-color);
+}
+main header .left .mobile{
+    display: none;
 }
 main header .left .search{
     position: relative;
@@ -228,6 +270,19 @@ main header .right .notifi::after{
     cursor: pointer;
     width: 15px;
     height: 15px;
+    animation: outlineAn 2s linear infinite;
+}
+@keyframes outlineAn {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+    opacity: .7;
+  }
 }
 aside nav .sideBarNotifi::after{
     top: 30%;
@@ -241,12 +296,47 @@ main header .right .notifi::after{
     font-size: 19px;
     cursor: pointer;
     color: var(--dark-color);
+    animation: moveBell 1.5s linear infinite;
+}
+@keyframes moveBell {
+  0% {
+    rotate: 45deg;
+  }
+  50% {
+    rotate: -45deg;
+  }
+  100% {
+    rotate: 45deg;
+  }
 }
 main header .userInfo .fa-chevron-down{
     margin-left: -10px;
     font-size: 14px;
     cursor: pointer;
     color: var(--dark-color);
+}
+main header .userInfo .drop-nav{
+  width: 100px;
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+  position: absolute;
+  top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: var(--shadow);
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  display: none;
+}
+.show{
+    display: block !important;
+}
+main header .userInfo .drop-nav a{
+  font-size: 14px;
+  color: var(--dark-color);
+  text-transform: capitalize;
 }
 /* ========== Dashboard ========== */
 .dashboard{
@@ -353,7 +443,10 @@ main header .userInfo .fa-chevron-down{
 /* applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
 .container{
-    grid-template-columns: 200px auto;
+    grid-template-columns: auto 1fr;
+}
+aside{
+    width: 200px;
 }
 aside .logo span{
     font-size: 18px;
@@ -422,9 +515,9 @@ aside .user a{
     position: relative;
 }
 aside{
-    min-height: 100vh !important;
+    min-height: 100vh;
     width: 200px;
-    height: 100vh !important;
+    height: 100vh;
     position: fixed;
     z-index: 999;
     border-radius: 0 10px 10px 0;
@@ -473,6 +566,12 @@ aside .user{
 aside .user .info{
     display: none;
 }
+main header .left .mobile{
+    display: block;
+}
+main header .left .big{
+    display: none;
+}
 }
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -509,6 +608,9 @@ main header .right .notifi::after{
 }
 main header .userInfo .fa-chevron-down{
     font-size: 12px;
+}
+main header .userInfo .drop-nav{
+  width: 80px;
 }
 .dashboard .titel .breadcrumb,
 .dashboard .titel .add{
