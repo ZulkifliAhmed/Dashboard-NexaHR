@@ -1,0 +1,1606 @@
+{
+  "company": {
+    "name": "NexaHR",
+    "industry": "Human Resources",
+    "location": "Cairo, Egypt",
+    "totalEmployees": 248
+  },
+  "employees": [
+    {
+      "id": "EMP-001",
+      "name": "Omar Faruk",
+      "email": "omar.faruk@nexahr.com",
+      "phone": "+20 100 100 2000",
+      "department": "Development",
+      "position": "Frontend Developer",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Giza",
+      "hireDate": "2021-01-01",
+      "birthday": "1988-01-01",
+      "salary": 12000,
+      "image": "images/employees/emp-001.jpg",
+      "skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React"
+      ],
+      "emergencyContact": {
+        "name": "Faruk Contact",
+        "relationship": "Brother",
+        "phone": "+20 110 300 4000"
+      }
+    },
+    {
+      "id": "EMP-002",
+      "name": "Ahmed Ali",
+      "email": "ahmed.ali@nexahr.com",
+      "phone": "+20 101 101 2001",
+      "department": "Design",
+      "position": "Product Designer",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2022-04-08",
+      "birthday": "1989-03-06",
+      "salary": 13800,
+      "image": "images/employees/emp-002.jpg",
+      "skills": [
+        "Figma",
+        "UI Design",
+        "Prototyping"
+      ],
+      "emergencyContact": {
+        "name": "Ali Contact",
+        "relationship": "Sister",
+        "phone": "+20 111 301 4001"
+      }
+    },
+    {
+      "id": "EMP-003",
+      "name": "Ali Hassan",
+      "email": "ali.hassan@nexahr.com",
+      "phone": "+20 102 102 2002",
+      "department": "Marketing",
+      "position": "SEO Specialist",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2023-07-15",
+      "birthday": "1990-05-11",
+      "salary": 15600,
+      "image": "images/employees/emp-003.jpg",
+      "skills": [
+        "Communication",
+        "Analytics",
+        "Campaigns"
+      ],
+      "emergencyContact": {
+        "name": "Hassan Contact",
+        "relationship": "Brother",
+        "phone": "+20 112 302 4002"
+      }
+    },
+    {
+      "id": "EMP-004",
+      "name": "Mohamed Ibrahim",
+      "email": "mohamed.ibrahim@nexahr.com",
+      "phone": "+20 103 103 2003",
+      "department": "Human Resources",
+      "position": "HR Specialist",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2024-10-22",
+      "birthday": "1991-07-16",
+      "salary": 17400,
+      "image": "images/employees/emp-004.jpg",
+      "skills": [
+        "Recruitment",
+        "Employee Relations",
+        "HRIS"
+      ],
+      "emergencyContact": {
+        "name": "Ibrahim Contact",
+        "relationship": "Sister",
+        "phone": "+20 113 303 4003"
+      }
+    },
+    {
+      "id": "EMP-005",
+      "name": "Youssef Khalil",
+      "email": "youssef.khalil@nexahr.com",
+      "phone": "+20 104 104 2004",
+      "department": "Finance",
+      "position": "Financial Analyst",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2025-01-03",
+      "birthday": "1992-09-21",
+      "salary": 19200,
+      "image": "images/employees/emp-005.jpg",
+      "skills": [
+        "Excel",
+        "Accounting",
+        "Financial Analysis"
+      ],
+      "emergencyContact": {
+        "name": "Khalil Contact",
+        "relationship": "Brother",
+        "phone": "+20 114 304 4004"
+      }
+    },
+    {
+      "id": "EMP-006",
+      "name": "Hassan Mahmoud",
+      "email": "hassan.mahmoud@nexahr.com",
+      "phone": "+20 105 105 2005",
+      "department": "Sales",
+      "position": "Sales Manager",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Giza",
+      "hireDate": "2026-04-10",
+      "birthday": "1993-11-26",
+      "salary": 21000,
+      "image": "images/employees/emp-006.jpg",
+      "skills": [
+        "Sales",
+        "CRM",
+        "Negotiation"
+      ],
+      "emergencyContact": {
+        "name": "Mahmoud Contact",
+        "relationship": "Sister",
+        "phone": "+20 115 305 4005"
+      }
+    },
+    {
+      "id": "EMP-007",
+      "name": "Khaled Salah",
+      "email": "khaled.salah@nexahr.com",
+      "phone": "+20 106 106 2006",
+      "department": "IT Support",
+      "position": "IT Support Specialist",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2021-07-17",
+      "birthday": "1994-01-05",
+      "salary": 22800,
+      "image": "images/employees/emp-007.jpg",
+      "skills": [
+        "Windows",
+        "Networking",
+        "Troubleshooting"
+      ],
+      "emergencyContact": {
+        "name": "Salah Contact",
+        "relationship": "Brother",
+        "phone": "+20 116 306 4006"
+      }
+    },
+    {
+      "id": "EMP-008",
+      "name": "Mostafa Nasser",
+      "email": "mostafa.nasser@nexahr.com",
+      "phone": "+20 107 107 2007",
+      "department": "Operations",
+      "position": "Operations Manager",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2022-10-24",
+      "birthday": "1995-03-10",
+      "salary": 24600,
+      "image": "images/employees/emp-008.jpg",
+      "skills": [
+        "Planning",
+        "Coordination",
+        "Process Management"
+      ],
+      "emergencyContact": {
+        "name": "Nasser Contact",
+        "relationship": "Sister",
+        "phone": "+20 117 307 4007"
+      }
+    },
+    {
+      "id": "EMP-009",
+      "name": "Sara Mohamed",
+      "email": "sara.mohamed@nexahr.com",
+      "phone": "+20 108 108 2008",
+      "department": "Development",
+      "position": "Software Engineer",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2023-01-05",
+      "birthday": "1996-05-15",
+      "salary": 26400,
+      "image": "images/employees/emp-009.jpg",
+      "skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React"
+      ],
+      "emergencyContact": {
+        "name": "Mohamed Contact",
+        "relationship": "Brother",
+        "phone": "+20 118 308 4008"
+      }
+    },
+    {
+      "id": "EMP-010",
+      "name": "Mariam Ali",
+      "email": "mariam.ali@nexahr.com",
+      "phone": "+20 109 109 2009",
+      "department": "Design",
+      "position": "UI/UX Designer",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2024-04-12",
+      "birthday": "1997-07-20",
+      "salary": 28200,
+      "image": "images/employees/emp-010.jpg",
+      "skills": [
+        "Figma",
+        "UI Design",
+        "Prototyping"
+      ],
+      "emergencyContact": {
+        "name": "Ali Contact",
+        "relationship": "Sister",
+        "phone": "+20 119 309 4009"
+      }
+    },
+    {
+      "id": "EMP-011",
+      "name": "Nour Hassan",
+      "email": "nour.hassan@nexahr.com",
+      "phone": "+20 100 110 2010",
+      "department": "Marketing",
+      "position": "SEO Specialist",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Giza",
+      "hireDate": "2025-07-19",
+      "birthday": "1998-09-25",
+      "salary": 12000,
+      "image": "images/employees/emp-011.jpg",
+      "skills": [
+        "Communication",
+        "Analytics",
+        "Campaigns"
+      ],
+      "emergencyContact": {
+        "name": "Hassan Contact",
+        "relationship": "Brother",
+        "phone": "+20 110 310 4010"
+      }
+    },
+    {
+      "id": "EMP-012",
+      "name": "Hana Adel",
+      "email": "hana.adel@nexahr.com",
+      "phone": "+20 101 111 2011",
+      "department": "Human Resources",
+      "position": "HR Manager",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2026-10-26",
+      "birthday": "1999-11-04",
+      "salary": 13800,
+      "image": "images/employees/emp-012.jpg",
+      "skills": [
+        "Recruitment",
+        "Employee Relations",
+        "HRIS"
+      ],
+      "emergencyContact": {
+        "name": "Adel Contact",
+        "relationship": "Sister",
+        "phone": "+20 111 311 4011"
+      }
+    },
+    {
+      "id": "EMP-013",
+      "name": "Salma Yassin",
+      "email": "salma.yassin@nexahr.com",
+      "phone": "+20 102 112 2012",
+      "department": "Finance",
+      "position": "Accountant",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2021-01-07",
+      "birthday": "2000-01-09",
+      "salary": 15600,
+      "image": "images/employees/emp-013.jpg",
+      "skills": [
+        "Excel",
+        "Accounting",
+        "Financial Analysis"
+      ],
+      "emergencyContact": {
+        "name": "Yassin Contact",
+        "relationship": "Brother",
+        "phone": "+20 112 312 4012"
+      }
+    },
+    {
+      "id": "EMP-014",
+      "name": "Aya Fathy",
+      "email": "aya.fathy@nexahr.com",
+      "phone": "+20 103 113 2013",
+      "department": "Sales",
+      "position": "Account Manager",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2022-04-14",
+      "birthday": "1988-03-14",
+      "salary": 17400,
+      "image": "images/employees/emp-014.jpg",
+      "skills": [
+        "Sales",
+        "CRM",
+        "Negotiation"
+      ],
+      "emergencyContact": {
+        "name": "Fathy Contact",
+        "relationship": "Sister",
+        "phone": "+20 113 313 4013"
+      }
+    },
+    {
+      "id": "EMP-015",
+      "name": "Laila Samy",
+      "email": "laila.samy@nexahr.com",
+      "phone": "+20 104 114 2014",
+      "department": "IT Support",
+      "position": "IT Manager",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2023-07-21",
+      "birthday": "1989-05-19",
+      "salary": 19200,
+      "image": "images/employees/emp-015.jpg",
+      "skills": [
+        "Windows",
+        "Networking",
+        "Troubleshooting"
+      ],
+      "emergencyContact": {
+        "name": "Samy Contact",
+        "relationship": "Brother",
+        "phone": "+20 114 314 4014"
+      }
+    },
+    {
+      "id": "EMP-016",
+      "name": "Dina Khaled",
+      "email": "dina.khaled@nexahr.com",
+      "phone": "+20 105 115 2015",
+      "department": "Operations",
+      "position": "Operations Specialist",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Giza",
+      "hireDate": "2024-10-02",
+      "birthday": "1990-07-24",
+      "salary": 21000,
+      "image": "images/employees/emp-016.jpg",
+      "skills": [
+        "Planning",
+        "Coordination",
+        "Process Management"
+      ],
+      "emergencyContact": {
+        "name": "Khaled Contact",
+        "relationship": "Sister",
+        "phone": "+20 115 315 4015"
+      }
+    },
+    {
+      "id": "EMP-017",
+      "name": "Menna Othman",
+      "email": "menna.othman@nexahr.com",
+      "phone": "+20 106 116 2016",
+      "department": "Development",
+      "position": "Backend Developer",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2025-01-09",
+      "birthday": "1991-09-03",
+      "salary": 22800,
+      "image": "images/employees/emp-017.jpg",
+      "skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React"
+      ],
+      "emergencyContact": {
+        "name": "Othman Contact",
+        "relationship": "Brother",
+        "phone": "+20 116 316 4016"
+      }
+    },
+    {
+      "id": "EMP-018",
+      "name": "Farah Salah",
+      "email": "farah.salah@nexahr.com",
+      "phone": "+20 107 117 2017",
+      "department": "Design",
+      "position": "Graphic Designer",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2026-04-16",
+      "birthday": "1992-11-08",
+      "salary": 24600,
+      "image": "images/employees/emp-018.jpg",
+      "skills": [
+        "Figma",
+        "UI Design",
+        "Prototyping"
+      ],
+      "emergencyContact": {
+        "name": "Salah Contact",
+        "relationship": "Sister",
+        "phone": "+20 117 317 4017"
+      }
+    },
+    {
+      "id": "EMP-019",
+      "name": "Adam Nasser",
+      "email": "adam.nasser@nexahr.com",
+      "phone": "+20 108 118 2018",
+      "department": "Marketing",
+      "position": "SEO Specialist",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2021-07-23",
+      "birthday": "1993-01-13",
+      "salary": 26400,
+      "image": "images/employees/emp-019.jpg",
+      "skills": [
+        "Communication",
+        "Analytics",
+        "Campaigns"
+      ],
+      "emergencyContact": {
+        "name": "Nasser Contact",
+        "relationship": "Brother",
+        "phone": "+20 118 318 4018"
+      }
+    },
+    {
+      "id": "EMP-020",
+      "name": "Karim Hassan",
+      "email": "karim.hassan@nexahr.com",
+      "phone": "+20 109 119 2019",
+      "department": "Human Resources",
+      "position": "Recruitment Specialist",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2022-10-04",
+      "birthday": "1994-03-18",
+      "salary": 28200,
+      "image": "images/employees/emp-020.jpg",
+      "skills": [
+        "Recruitment",
+        "Employee Relations",
+        "HRIS"
+      ],
+      "emergencyContact": {
+        "name": "Hassan Contact",
+        "relationship": "Sister",
+        "phone": "+20 119 319 4019"
+      }
+    },
+    {
+      "id": "EMP-021",
+      "name": "Tarek Ali",
+      "email": "tarek.ali@nexahr.com",
+      "phone": "+20 100 120 2020",
+      "department": "Finance",
+      "position": "Finance Manager",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Giza",
+      "hireDate": "2023-01-11",
+      "birthday": "1995-05-23",
+      "salary": 12000,
+      "image": "images/employees/emp-021.jpg",
+      "skills": [
+        "Excel",
+        "Accounting",
+        "Financial Analysis"
+      ],
+      "emergencyContact": {
+        "name": "Ali Contact",
+        "relationship": "Brother",
+        "phone": "+20 110 320 4020"
+      }
+    },
+    {
+      "id": "EMP-022",
+      "name": "Amr Mahmoud",
+      "email": "amr.mahmoud@nexahr.com",
+      "phone": "+20 101 121 2021",
+      "department": "Sales",
+      "position": "Sales Executive",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2024-04-18",
+      "birthday": "1996-07-02",
+      "salary": 13800,
+      "image": "images/employees/emp-022.jpg",
+      "skills": [
+        "Sales",
+        "CRM",
+        "Negotiation"
+      ],
+      "emergencyContact": {
+        "name": "Mahmoud Contact",
+        "relationship": "Sister",
+        "phone": "+20 111 321 4021"
+      }
+    },
+    {
+      "id": "EMP-023",
+      "name": "Nada Ibrahim",
+      "email": "nada.ibrahim@nexahr.com",
+      "phone": "+20 102 122 2022",
+      "department": "IT Support",
+      "position": "System Administrator",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2025-07-25",
+      "birthday": "1997-09-07",
+      "salary": 15600,
+      "image": "images/employees/emp-023.jpg",
+      "skills": [
+        "Windows",
+        "Networking",
+        "Troubleshooting"
+      ],
+      "emergencyContact": {
+        "name": "Ibrahim Contact",
+        "relationship": "Brother",
+        "phone": "+20 112 322 4022"
+      }
+    },
+    {
+      "id": "EMP-024",
+      "name": "Reem Khalil",
+      "email": "reem.khalil@nexahr.com",
+      "phone": "+20 103 123 2023",
+      "department": "Operations",
+      "position": "Coordinator",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2026-10-06",
+      "birthday": "1998-11-12",
+      "salary": 17400,
+      "image": "images/employees/emp-024.jpg",
+      "skills": [
+        "Planning",
+        "Coordination",
+        "Process Management"
+      ],
+      "emergencyContact": {
+        "name": "Khalil Contact",
+        "relationship": "Sister",
+        "phone": "+20 113 323 4023"
+      }
+    },
+    {
+      "id": "EMP-025",
+      "name": "Malak Adel",
+      "email": "malak.adel@nexahr.com",
+      "phone": "+20 104 124 2024",
+      "department": "Development",
+      "position": "QA Engineer",
+      "status": "Active",
+      "employmentType": "Full Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2021-01-13",
+      "birthday": "1999-01-17",
+      "salary": 19200,
+      "image": "images/employees/emp-025.jpg",
+      "skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React"
+      ],
+      "emergencyContact": {
+        "name": "Adel Contact",
+        "relationship": "Brother",
+        "phone": "+20 114 324 4024"
+      }
+    },
+    {
+      "id": "EMP-026",
+      "name": "Hany Samy",
+      "email": "hany.samy@nexahr.com",
+      "phone": "+20 105 125 2025",
+      "department": "Design",
+      "position": "Product Designer",
+      "status": "Active",
+      "employmentType": "Part Time",
+      "gender": "Male",
+      "location": "Giza",
+      "hireDate": "2022-04-20",
+      "birthday": "2000-03-22",
+      "salary": 21000,
+      "image": "images/employees/emp-026.jpg",
+      "skills": [
+        "Figma",
+        "UI Design",
+        "Prototyping"
+      ],
+      "emergencyContact": {
+        "name": "Samy Contact",
+        "relationship": "Sister",
+        "phone": "+20 115 325 4025"
+      }
+    },
+    {
+      "id": "EMP-027",
+      "name": "Rania Yassin",
+      "email": "rania.yassin@nexahr.com",
+      "phone": "+20 106 126 2026",
+      "department": "Marketing",
+      "position": "SEO Specialist",
+      "status": "On Leave",
+      "employmentType": "Part Time",
+      "gender": "Female",
+      "location": "Cairo",
+      "hireDate": "2023-07-01",
+      "birthday": "1988-05-01",
+      "salary": 22800,
+      "image": "images/employees/emp-027.jpg",
+      "skills": [
+        "Communication",
+        "Analytics",
+        "Campaigns"
+      ],
+      "emergencyContact": {
+        "name": "Yassin Contact",
+        "relationship": "Brother",
+        "phone": "+20 116 326 4026"
+      }
+    },
+    {
+      "id": "EMP-028",
+      "name": "Samir Fathy",
+      "email": "samir.fathy@nexahr.com",
+      "phone": "+20 107 127 2027",
+      "department": "Human Resources",
+      "position": "HR Specialist",
+      "status": "On Leave",
+      "employmentType": "Part Time",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2024-10-08",
+      "birthday": "1989-07-06",
+      "salary": 24600,
+      "image": "images/employees/emp-028.jpg",
+      "skills": [
+        "Recruitment",
+        "Employee Relations",
+        "HRIS"
+      ],
+      "emergencyContact": {
+        "name": "Fathy Contact",
+        "relationship": "Sister",
+        "phone": "+20 117 327 4027"
+      }
+    },
+    {
+      "id": "EMP-029",
+      "name": "Mahmoud Nasser",
+      "email": "mahmoud.nasser@nexahr.com",
+      "phone": "+20 108 128 2028",
+      "department": "Finance",
+      "position": "Financial Analyst",
+      "status": "Inactive",
+      "employmentType": "Contract",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2025-01-15",
+      "birthday": "1990-09-11",
+      "salary": 26400,
+      "image": "images/employees/emp-029.jpg",
+      "skills": [
+        "Excel",
+        "Accounting",
+        "Financial Analysis"
+      ],
+      "emergencyContact": {
+        "name": "Nasser Contact",
+        "relationship": "Brother",
+        "phone": "+20 118 328 4028"
+      }
+    },
+    {
+      "id": "EMP-030",
+      "name": "Ibrahim Salah",
+      "email": "ibrahim.salah@nexahr.com",
+      "phone": "+20 109 129 2029",
+      "department": "Sales",
+      "position": "Sales Manager",
+      "status": "Inactive",
+      "employmentType": "Contract",
+      "gender": "Male",
+      "location": "Cairo",
+      "hireDate": "2026-04-22",
+      "birthday": "1991-11-16",
+      "salary": 28200,
+      "image": "images/employees/emp-030.jpg",
+      "skills": [
+        "Sales",
+        "CRM",
+        "Negotiation"
+      ],
+      "emergencyContact": {
+        "name": "Salah Contact",
+        "relationship": "Sister",
+        "phone": "+20 119 329 4029"
+      }
+    }
+  ],
+  "departments": [
+    {
+      "id": "DEP-001",
+      "name": "Development",
+      "manager": "Omar Hassan",
+      "location": "Cairo",
+      "budget": 850000
+    },
+    {
+      "id": "DEP-002",
+      "name": "Design",
+      "manager": "Sara Mohamed",
+      "location": "Cairo",
+      "budget": 420000
+    },
+    {
+      "id": "DEP-003",
+      "name": "Marketing",
+      "manager": "Ahmed Khaled",
+      "location": "Cairo",
+      "budget": 380000
+    },
+    {
+      "id": "DEP-004",
+      "name": "Human Resources",
+      "manager": "Mariam Ali",
+      "location": "Cairo",
+      "budget": 300000
+    },
+    {
+      "id": "DEP-005",
+      "name": "Finance",
+      "manager": "Hassan Mahmoud",
+      "location": "Cairo",
+      "budget": 460000
+    },
+    {
+      "id": "DEP-006",
+      "name": "Sales",
+      "manager": "Khaled Nasser",
+      "location": "Giza",
+      "budget": 520000
+    },
+    {
+      "id": "DEP-007",
+      "name": "IT Support",
+      "manager": "Mostafa Adel",
+      "location": "Giza",
+      "budget": 340000
+    },
+    {
+      "id": "DEP-008",
+      "name": "Operations",
+      "manager": "Laila Samy",
+      "location": "Cairo",
+      "budget": 410000
+    }
+  ],
+  "attendance": [
+    {
+      "id": "AT-001",
+      "employeeId": "EMP-001",
+      "employeeName": "Omar Faruk",
+      "department": "Development",
+      "position": "Frontend Developer",
+      "date": "2026-09-23",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-002",
+      "employeeId": "EMP-002",
+      "employeeName": "Ahmed Ali",
+      "department": "Design",
+      "position": "Product Designer",
+      "date": "2026-09-22",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-003",
+      "employeeId": "EMP-003",
+      "employeeName": "Ali Hassan",
+      "department": "Marketing",
+      "position": "SEO Specialist",
+      "date": "2026-09-21",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-004",
+      "employeeId": "EMP-004",
+      "employeeName": "Mohamed Ibrahim",
+      "department": "Human Resources",
+      "position": "HR Specialist",
+      "date": "2026-09-20",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-005",
+      "employeeId": "EMP-005",
+      "employeeName": "Youssef Khalil",
+      "department": "Finance",
+      "position": "Financial Analyst",
+      "date": "2026-09-19",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-006",
+      "employeeId": "EMP-006",
+      "employeeName": "Hassan Mahmoud",
+      "department": "Sales",
+      "position": "Sales Manager",
+      "date": "2026-09-23",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-007",
+      "employeeId": "EMP-007",
+      "employeeName": "Khaled Salah",
+      "department": "IT Support",
+      "position": "IT Support Specialist",
+      "date": "2026-09-22",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-008",
+      "employeeId": "EMP-008",
+      "employeeName": "Mostafa Nasser",
+      "department": "Operations",
+      "position": "Operations Manager",
+      "date": "2026-09-21",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-009",
+      "employeeId": "EMP-009",
+      "employeeName": "Sara Mohamed",
+      "department": "Development",
+      "position": "Software Engineer",
+      "date": "2026-09-20",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-010",
+      "employeeId": "EMP-010",
+      "employeeName": "Mariam Ali",
+      "department": "Design",
+      "position": "UI/UX Designer",
+      "date": "2026-09-19",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-011",
+      "employeeId": "EMP-011",
+      "employeeName": "Nour Hassan",
+      "department": "Marketing",
+      "position": "SEO Specialist",
+      "date": "2026-09-23",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-012",
+      "employeeId": "EMP-012",
+      "employeeName": "Hana Adel",
+      "department": "Human Resources",
+      "position": "HR Manager",
+      "date": "2026-09-22",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-013",
+      "employeeId": "EMP-013",
+      "employeeName": "Salma Yassin",
+      "department": "Finance",
+      "position": "Accountant",
+      "date": "2026-09-21",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-014",
+      "employeeId": "EMP-014",
+      "employeeName": "Aya Fathy",
+      "department": "Sales",
+      "position": "Account Manager",
+      "date": "2026-09-20",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-015",
+      "employeeId": "EMP-015",
+      "employeeName": "Laila Samy",
+      "department": "IT Support",
+      "position": "IT Manager",
+      "date": "2026-09-19",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-016",
+      "employeeId": "EMP-016",
+      "employeeName": "Dina Khaled",
+      "department": "Operations",
+      "position": "Operations Specialist",
+      "date": "2026-09-23",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-017",
+      "employeeId": "EMP-017",
+      "employeeName": "Menna Othman",
+      "department": "Development",
+      "position": "Backend Developer",
+      "date": "2026-09-22",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-018",
+      "employeeId": "EMP-018",
+      "employeeName": "Farah Salah",
+      "department": "Design",
+      "position": "Graphic Designer",
+      "date": "2026-09-21",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-019",
+      "employeeId": "EMP-019",
+      "employeeName": "Adam Nasser",
+      "department": "Marketing",
+      "position": "SEO Specialist",
+      "date": "2026-09-20",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-020",
+      "employeeId": "EMP-020",
+      "employeeName": "Karim Hassan",
+      "department": "Human Resources",
+      "position": "Recruitment Specialist",
+      "date": "2026-09-19",
+      "checkIn": "08:55",
+      "checkOut": "17:05",
+      "totalHours": 8.17,
+      "status": "Present"
+    },
+    {
+      "id": "AT-021",
+      "employeeId": "EMP-021",
+      "employeeName": "Tarek Ali",
+      "department": "Finance",
+      "position": "Finance Manager",
+      "date": "2026-09-23",
+      "checkIn": "09:20",
+      "checkOut": "17:05",
+      "totalHours": 7.75,
+      "status": "Late"
+    },
+    {
+      "id": "AT-022",
+      "employeeId": "EMP-022",
+      "employeeName": "Amr Mahmoud",
+      "department": "Sales",
+      "position": "Sales Executive",
+      "date": "2026-09-22",
+      "checkIn": "09:20",
+      "checkOut": "17:05",
+      "totalHours": 7.75,
+      "status": "Late"
+    },
+    {
+      "id": "AT-023",
+      "employeeId": "EMP-023",
+      "employeeName": "Nada Ibrahim",
+      "department": "IT Support",
+      "position": "System Administrator",
+      "date": "2026-09-21",
+      "checkIn": "09:20",
+      "checkOut": "17:05",
+      "totalHours": 7.75,
+      "status": "Late"
+    },
+    {
+      "id": "AT-024",
+      "employeeId": "EMP-024",
+      "employeeName": "Reem Khalil",
+      "department": "Operations",
+      "position": "Coordinator",
+      "date": "2026-09-20",
+      "checkIn": "09:20",
+      "checkOut": "17:05",
+      "totalHours": 7.75,
+      "status": "Late"
+    },
+    {
+      "id": "AT-025",
+      "employeeId": "EMP-025",
+      "employeeName": "Malak Adel",
+      "department": "Development",
+      "position": "QA Engineer",
+      "date": "2026-09-19",
+      "checkIn": null,
+      "checkOut": null,
+      "totalHours": 0,
+      "status": "Absent"
+    },
+    {
+      "id": "AT-026",
+      "employeeId": "EMP-026",
+      "employeeName": "Hany Samy",
+      "department": "Design",
+      "position": "Product Designer",
+      "date": "2026-09-23",
+      "checkIn": null,
+      "checkOut": null,
+      "totalHours": 0,
+      "status": "Absent"
+    },
+    {
+      "id": "AT-027",
+      "employeeId": "EMP-027",
+      "employeeName": "Rania Yassin",
+      "department": "Marketing",
+      "position": "SEO Specialist",
+      "date": "2026-09-22",
+      "checkIn": null,
+      "checkOut": null,
+      "totalHours": 0,
+      "status": "Absent"
+    },
+    {
+      "id": "AT-028",
+      "employeeId": "EMP-028",
+      "employeeName": "Samir Fathy",
+      "department": "Human Resources",
+      "position": "HR Specialist",
+      "date": "2026-09-21",
+      "checkIn": null,
+      "checkOut": null,
+      "totalHours": 0,
+      "status": "On Leave"
+    },
+    {
+      "id": "AT-029",
+      "employeeId": "EMP-029",
+      "employeeName": "Mahmoud Nasser",
+      "department": "Finance",
+      "position": "Financial Analyst",
+      "date": "2026-09-20",
+      "checkIn": null,
+      "checkOut": null,
+      "totalHours": 0,
+      "status": "On Leave"
+    },
+    {
+      "id": "AT-030",
+      "employeeId": "EMP-030",
+      "employeeName": "Ibrahim Salah",
+      "department": "Sales",
+      "position": "Sales Manager",
+      "date": "2026-09-19",
+      "checkIn": null,
+      "checkOut": null,
+      "totalHours": 0,
+      "status": "On Leave"
+    }
+  ],
+  "leaveRequests": [
+    {
+      "id": "LR-001",
+      "employeeId": "EMP-001",
+      "employeeName": "Omar Faruk",
+      "department": "Development",
+      "type": "Annual Leave",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-01",
+      "duration": 1,
+      "reason": "Family trip",
+      "status": "Approved",
+      "requestedAt": "2026-08-25"
+    },
+    {
+      "id": "LR-002",
+      "employeeId": "EMP-004",
+      "employeeName": "Mohamed Ibrahim",
+      "department": "Human Resources",
+      "type": "Sick Leave",
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-05",
+      "duration": 2,
+      "reason": "Medical appointment",
+      "status": "Approved",
+      "requestedAt": "2026-08-28"
+    },
+    {
+      "id": "LR-003",
+      "employeeId": "EMP-007",
+      "employeeName": "Khaled Salah",
+      "department": "IT Support",
+      "type": "Personal Leave",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "duration": 3,
+      "reason": "Personal matter",
+      "status": "Pending",
+      "requestedAt": "2026-08-31"
+    },
+    {
+      "id": "LR-004",
+      "employeeId": "EMP-010",
+      "employeeName": "Mariam Ali",
+      "department": "Design",
+      "type": "Maternity Leave",
+      "startDate": "2026-09-10",
+      "endDate": "2026-09-13",
+      "duration": 4,
+      "reason": "Vacation",
+      "status": "Rejected",
+      "requestedAt": "2026-09-03"
+    },
+    {
+      "id": "LR-005",
+      "employeeId": "EMP-013",
+      "employeeName": "Salma Yassin",
+      "department": "Finance",
+      "type": "Unpaid Leave",
+      "startDate": "2026-09-13",
+      "endDate": "2026-09-17",
+      "duration": 5,
+      "reason": "Family event",
+      "status": "Approved",
+      "requestedAt": "2026-09-06"
+    },
+    {
+      "id": "LR-006",
+      "employeeId": "EMP-016",
+      "employeeName": "Dina Khaled",
+      "department": "Operations",
+      "type": "Annual Leave",
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-16",
+      "duration": 1,
+      "reason": "Family trip",
+      "status": "Approved",
+      "requestedAt": "2026-09-09"
+    },
+    {
+      "id": "LR-007",
+      "employeeId": "EMP-019",
+      "employeeName": "Adam Nasser",
+      "department": "Marketing",
+      "type": "Sick Leave",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-20",
+      "duration": 2,
+      "reason": "Medical appointment",
+      "status": "Pending",
+      "requestedAt": "2026-09-12"
+    },
+    {
+      "id": "LR-008",
+      "employeeId": "EMP-022",
+      "employeeName": "Amr Mahmoud",
+      "department": "Sales",
+      "type": "Personal Leave",
+      "startDate": "2026-09-22",
+      "endDate": "2026-09-24",
+      "duration": 3,
+      "reason": "Personal matter",
+      "status": "Rejected",
+      "requestedAt": "2026-09-15"
+    },
+    {
+      "id": "LR-009",
+      "employeeId": "EMP-025",
+      "employeeName": "Malak Adel",
+      "department": "Development",
+      "type": "Maternity Leave",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-28",
+      "duration": 4,
+      "reason": "Vacation",
+      "status": "Approved",
+      "requestedAt": "2026-09-18"
+    },
+    {
+      "id": "LR-010",
+      "employeeId": "EMP-028",
+      "employeeName": "Samir Fathy",
+      "department": "Human Resources",
+      "type": "Unpaid Leave",
+      "startDate": "2026-09-28",
+      "endDate": "2026-10-02",
+      "duration": 5,
+      "reason": "Family event",
+      "status": "Approved",
+      "requestedAt": "2026-09-21"
+    },
+    {
+      "id": "LR-011",
+      "employeeId": "EMP-001",
+      "employeeName": "Omar Faruk",
+      "department": "Development",
+      "type": "Annual Leave",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-01",
+      "duration": 1,
+      "reason": "Family trip",
+      "status": "Pending",
+      "requestedAt": "2026-08-25"
+    },
+    {
+      "id": "LR-012",
+      "employeeId": "EMP-004",
+      "employeeName": "Mohamed Ibrahim",
+      "department": "Human Resources",
+      "type": "Sick Leave",
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-05",
+      "duration": 2,
+      "reason": "Medical appointment",
+      "status": "Rejected",
+      "requestedAt": "2026-08-28"
+    },
+    {
+      "id": "LR-013",
+      "employeeId": "EMP-007",
+      "employeeName": "Khaled Salah",
+      "department": "IT Support",
+      "type": "Personal Leave",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "duration": 3,
+      "reason": "Personal matter",
+      "status": "Approved",
+      "requestedAt": "2026-08-31"
+    },
+    {
+      "id": "LR-014",
+      "employeeId": "EMP-010",
+      "employeeName": "Mariam Ali",
+      "department": "Design",
+      "type": "Maternity Leave",
+      "startDate": "2026-09-10",
+      "endDate": "2026-09-13",
+      "duration": 4,
+      "reason": "Vacation",
+      "status": "Approved",
+      "requestedAt": "2026-09-03"
+    },
+    {
+      "id": "LR-015",
+      "employeeId": "EMP-013",
+      "employeeName": "Salma Yassin",
+      "department": "Finance",
+      "type": "Unpaid Leave",
+      "startDate": "2026-09-13",
+      "endDate": "2026-09-17",
+      "duration": 5,
+      "reason": "Family event",
+      "status": "Pending",
+      "requestedAt": "2026-09-06"
+    },
+    {
+      "id": "LR-016",
+      "employeeId": "EMP-016",
+      "employeeName": "Dina Khaled",
+      "department": "Operations",
+      "type": "Annual Leave",
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-16",
+      "duration": 1,
+      "reason": "Family trip",
+      "status": "Rejected",
+      "requestedAt": "2026-09-09"
+    },
+    {
+      "id": "LR-017",
+      "employeeId": "EMP-019",
+      "employeeName": "Adam Nasser",
+      "department": "Marketing",
+      "type": "Sick Leave",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-20",
+      "duration": 2,
+      "reason": "Medical appointment",
+      "status": "Approved",
+      "requestedAt": "2026-09-12"
+    },
+    {
+      "id": "LR-018",
+      "employeeId": "EMP-022",
+      "employeeName": "Amr Mahmoud",
+      "department": "Sales",
+      "type": "Personal Leave",
+      "startDate": "2026-09-22",
+      "endDate": "2026-09-24",
+      "duration": 3,
+      "reason": "Personal matter",
+      "status": "Approved",
+      "requestedAt": "2026-09-15"
+    },
+    {
+      "id": "LR-019",
+      "employeeId": "EMP-025",
+      "employeeName": "Malak Adel",
+      "department": "Development",
+      "type": "Maternity Leave",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-28",
+      "duration": 4,
+      "reason": "Vacation",
+      "status": "Pending",
+      "requestedAt": "2026-09-18"
+    },
+    {
+      "id": "LR-020",
+      "employeeId": "EMP-028",
+      "employeeName": "Samir Fathy",
+      "department": "Human Resources",
+      "type": "Unpaid Leave",
+      "startDate": "2026-09-28",
+      "endDate": "2026-10-02",
+      "duration": 5,
+      "reason": "Family event",
+      "status": "Rejected",
+      "requestedAt": "2026-09-21"
+    },
+    {
+      "id": "LR-021",
+      "employeeId": "EMP-001",
+      "employeeName": "Omar Faruk",
+      "department": "Development",
+      "type": "Annual Leave",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-01",
+      "duration": 1,
+      "reason": "Family trip",
+      "status": "Approved",
+      "requestedAt": "2026-08-25"
+    },
+    {
+      "id": "LR-022",
+      "employeeId": "EMP-004",
+      "employeeName": "Mohamed Ibrahim",
+      "department": "Human Resources",
+      "type": "Sick Leave",
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-05",
+      "duration": 2,
+      "reason": "Medical appointment",
+      "status": "Approved",
+      "requestedAt": "2026-08-28"
+    },
+    {
+      "id": "LR-023",
+      "employeeId": "EMP-007",
+      "employeeName": "Khaled Salah",
+      "department": "IT Support",
+      "type": "Personal Leave",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "duration": 3,
+      "reason": "Personal matter",
+      "status": "Pending",
+      "requestedAt": "2026-08-31"
+    },
+    {
+      "id": "LR-024",
+      "employeeId": "EMP-010",
+      "employeeName": "Mariam Ali",
+      "department": "Design",
+      "type": "Maternity Leave",
+      "startDate": "2026-09-10",
+      "endDate": "2026-09-13",
+      "duration": 4,
+      "reason": "Vacation",
+      "status": "Rejected",
+      "requestedAt": "2026-09-03"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "type": "leave",
+      "title": "New leave request",
+      "message": "A new leave request was submitted.",
+      "read": false,
+      "date": "2026-09-23"
+    },
+    {
+      "id": 2,
+      "type": "birthday",
+      "title": "Upcoming birthday",
+      "message": "Omar Faruk's birthday is tomorrow.",
+      "read": false,
+      "date": "2026-09-23"
+    },
+    {
+      "id": 3,
+      "type": "employee",
+      "title": "New employee",
+      "message": "A new employee profile was added.",
+      "read": true,
+      "date": "2026-09-22"
+    },
+    {
+      "id": 4,
+      "type": "report",
+      "title": "Monthly report ready",
+      "message": "The September HR report is ready.",
+      "read": true,
+      "date": "2026-09-20"
+    }
+  ],
+  "reports": [
+    {
+      "id": "REP-001",
+      "name": "Monthly Employee Report",
+      "type": "Employees",
+      "period": "September 2026",
+      "status": "Ready"
+    },
+    {
+      "id": "REP-002",
+      "name": "Attendance Report",
+      "type": "Attendance",
+      "period": "September 2026",
+      "status": "Ready"
+    },
+    {
+      "id": "REP-003",
+      "name": "Leave Requests Report",
+      "type": "Leave",
+      "period": "September 2026",
+      "status": "Ready"
+    },
+    {
+      "id": "REP-004",
+      "name": "Department Report",
+      "type": "Departments",
+      "period": "Q3 2026",
+      "status": "Ready"
+    }
+  ],
+  "settings": {
+    "companyName": "NexaHR",
+    "currency": "EGP",
+    "workStartTime": "09:00",
+    "workEndTime": "17:00",
+    "workDays": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "timezone": "Africa/Cairo"
+  }
+}

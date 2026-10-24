@@ -1,109 +1,391 @@
-// ======================================
-// Employees Overview
-// ======================================
+// Carts Statistics
+async function updateCarts() {
+    try {
+        const data = await fetchData();
+        const employees = data.employees ?? [];
 
-const overviewOptions = {
+        const stats = [
+            employees.length,
+            employees.filter(emp => emp.status === "Active").length,
+            employees.filter(emp => emp.status === "On Leave").length,
+            employees.filter(emp => emp.status === "Inactive").length
+        ];
 
-    chart: {
-        type: "area",
-        height: 200
-    },
+        const carts = document.querySelectorAll(".carts .range");
 
-    series: [
-        {
-            name: "Employees",
-            data: [180, 190, 200, 215, 225, 235, 248]
-        }
-    ],
+        carts.forEach((el, index) => {
+            el.dataset.range = stats[index];
+        });
 
-    xaxis: {
-        categories: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul"
-        ]
-    },
+        carts.forEach(el => {
+            countNumber(el);
+        });
 
-    stroke: {
-        curve: "smooth"
-    },
-
-    colors: ["#6366F1"],
-
-    tooltip: {
-        y: {
-            formatter: function (value) {
-                return value + " Employees";
-            }
-        }
+    } catch (error) {
+        console.error("Failed to load employee data:", error);
     }
-};
+}
 
-const overviewChart = new ApexCharts(
-    document.querySelector("#employeesOverview"),
-    overviewOptions
-);
+updateCarts();
 
-overviewChart.render();
-
-// ======================================
-// Employees by Department
-// ======================================
-
-const departmentOptions = {
-
-    chart: {
-        type: "donut",
-        height: 200
-    },
-
-    series: [
-        42,
-        35,
-        28,
-        18,
-        16,
-        22
-    ],
-
-    labels: [
-        "Development",
-        "Design",
-        "Marketing",
-        "HR",
-        "Finance",
-        "Sales"
-    ],
-
-    colors: [
-        "#6366F1",
-        "#3B82F6",
-        "#8B5CF6",
-        "#10B981",
-        "#F59E0B",
-        "#EF4444"
-    ],
-
-    legend: {
-        position: "right"
-    },
-
-    tooltip: {
-        y: {
-            formatter: function (value) {
-                return value + " Employees";
-            }
+// Employees Carts Count
+function countNumber(item){
+    const maxNum = item.dataset.range
+     let count = setInterval(()=>{
+        item.textContent++
+        if (item.textContent == maxNum) {
+            clearInterval(count)
         }
+     },1000 / maxNum)
+}
+
+// Charts
+async function renderDashboardCharts() {
+    try {
+        const response = await fetch("./data.json");
+        
+        if (!response.ok) {
+            throw new Error("Failed to load data.json");
+        }
+
+        const data = await response.json();
+
+        const employees = data.employees;
+        const departments = data.departments;
+
+        // Employees Overview
+
+        const monthlyData = {};
+
+        employees.forEach(employee => {
+            const date = new Date(employee.hireDate);
+
+            if (Number.isNaN(date.getTime())) return;
+
+            const month = date.toLocaleString("en-US", {
+                month: "short",
+                timeZone: "UTC"
+            });
+
+            const year = date.getUTCFullYear();
+            const key = `${year}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+
+            if (!monthlyData[key]) {
+                monthlyData[key] = {
+                    label: `${month} ${year}`,
+                    count: 0
+                };
+            }
+
+            monthlyData[key].count++;
+        });
+
+        const sortedMonths = Object.keys(monthlyData).sort();
+
+        let total = 0;
+
+        const overviewCategories = [];
+        const overviewSeries = [];
+
+        sortedMonths.forEach(key => {
+            total += monthlyData[key].count;
+            overviewCategories.push(monthlyData[key].label);
+            overviewSeries.push(total);
+        });
+
+        const overviewOptions = {
+            chart: {
+                type: "area",
+                height: 300
+            },
+
+            series: [{
+                name: "Employees",
+                data: overviewSeries
+            }],
+
+            xaxis: {
+                categories: overviewCategories
+            },
+
+            stroke: {
+                curve: "smooth"
+            },
+
+            colors: ["#6366F1"],
+
+            tooltip: {
+                y: {
+                    formatter: value => value + " Employees"
+                }
+            }
+        };
+
+        const overviewElement = document.querySelector("#employeesOverview");
+
+        if (overviewElement) {
+            const overviewChart = new ApexCharts(
+                overviewElement,
+                overviewOptions
+            );
+
+            overviewChart.render();
+        }
+
+        // Employees by Department
+        const departmentCounts = departments.map(department => {
+            const count = employees.filter(employee =>
+                employee.department === department.name
+            ).length;
+
+            return {
+                name: department.name,
+                count: count
+            };
+        });
+
+        const departmentOptions = {
+            chart: {
+                type: "donut",
+                height: 300
+            },
+
+            series: departmentCounts.map(department => department.count),
+
+            labels: departmentCounts.map(department => department.name),
+
+            colors: [
+                "#6366F1",
+                "#3B82F6",
+                "#8B5CF6",
+                "#10B981",
+                "#F59E0B",
+                "#EF4444",
+                "#14B8A6",
+                "#F97316"
+            ],
+
+            legend: {
+                position: "right"
+            },
+
+            tooltip: {
+                y: {
+                    formatter: value => value + " Employees"
+                }
+            }
+        };
+
+        const departmentElement = document.querySelector("#employeesDepartment");
+
+        if (departmentElement) {
+            const departmentChart = new ApexCharts(
+                departmentElement,
+                departmentOptions
+            );
+
+            departmentChart.render();
+        }
+
+    } catch (error) {
+        console.error("Error rendering dashboard charts:", error);
     }
-};
+}
 
-const departmentChart = new ApexCharts(
-    document.querySelector("#employeesDepartment"),
-    departmentOptions
-);
+renderDashboardCharts();
 
-departmentChart.render();
+//recent employees
+async function renderRecentEmployees() {
+    try {
+        const response = await fetch("./data.json");
+
+        if (!response.ok) {
+            throw new Error("Failed to load data.json");
+        }
+
+        const data = await response.json();
+
+        const recentEmployees = [...data.employees]
+            .sort((a, b) => new Date(b.hireDate) - new Date(a.hireDate))
+            .slice(0, 5);
+
+        const employeeList = document.querySelector(".employeeList");
+
+        if (!employeeList) return;
+
+        employeeList.innerHTML = recentEmployees.map(employee => {
+            
+            const hireDate = new Date(employee.hireDate);
+
+            const formattedDate = hireDate.toLocaleDateString("en-US", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+                timeZone: "UTC"
+            });
+
+            return `
+                <div class="employeeItem">
+                    <div class="employeeInfo">
+                        <div class="avatar">
+                            <img src="${employee.image}" alt="${employee.name}">
+                        </div>
+
+                        <div class="userDetails">
+                            <h4>${employee.name}</h4>
+                            <p>${employee.position}</p>
+                        </div>
+                    </div>
+
+                    <p class="titel">${employee.department}</p>
+
+                    <div class="details">
+                        <p>${formattedDate}</p>
+
+                        <div class="employeeLink">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <ul class="moreDetails">
+                            <li>
+                                <a href="#" class="editEmployee"
+                                   data-id="${employee.id}">Edit</a>
+                            </li>
+                            <li>
+                                <a href="#" class="deleteEmployee"
+                                   data-id="${employee.id}">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }).join("");
+
+    } catch (error) {
+        console.error("Error loading recent employees:", error);
+    }
+}
+
+renderRecentEmployees();
+// Employee Dropdown Menu
+document.addEventListener("click", function (e) {
+    const clickedButton = e.target.closest(".employeeLink");
+
+    // Open or close the selected menu
+    if (clickedButton) {
+        const details = clickedButton.closest(".details");
+        const menu = details.querySelector(".moreDetails");
+
+        if (!menu) return;
+
+        // Close all other menus
+        document.querySelectorAll(".moreDetails.show").forEach(item => {
+            if (item !== menu) {
+                item.classList.remove("show");
+            }
+        });
+
+        // Toggle the selected menu
+        menu.classList.toggle("show");
+
+        return;
+    }
+
+    // Keep the menu open when clicking inside it
+    if (e.target.closest(".moreDetails")) {
+        return;
+    }
+
+    // Close menus when clicking outside
+    document.querySelectorAll(".moreDetails.show").forEach(menu => {
+        menu.classList.remove("show");
+    });
+});
+
+// Close menus with Escape
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        document.querySelectorAll(".moreDetails.show").forEach(menu => {
+            menu.classList.remove("show");
+        });
+    }
+});
+
+
+async function renderUpcomingBirthdays() {
+    try {
+        const response = await fetch("./data.json");
+
+        if (!response.ok) {
+            throw new Error("Failed to load data.json");
+        }
+
+        const data = await response.json();
+
+        const today = new Date();
+        const currentMonth = today.getMonth();
+        const currentDay = today.getDate();
+
+        const upcomingBirthdays = data.employees
+            .map(employee => {
+                const birthday = new Date(`${employee.birthday}T00:00:00`);
+
+                const nextBirthday = new Date(
+                    today.getFullYear(),
+                    birthday.getMonth(),
+                    birthday.getDate()
+                );
+
+                if (
+                    birthday.getMonth() < currentMonth ||
+                    (birthday.getMonth() === currentMonth &&
+                     birthday.getDate() < currentDay)
+                ) {
+                    nextBirthday.setFullYear(today.getFullYear() + 1);
+                }
+
+                return { ...employee, nextBirthday };
+            })
+            .sort((a, b) => a.nextBirthday - b.nextBirthday)
+            .slice(0, 5);
+
+        const birthdayList = document.querySelector(".birthdayList");
+
+        if (!birthdayList) return;
+
+        birthdayList.innerHTML = upcomingBirthdays.map(employee => {
+            const birthday = new Date(`${employee.birthday}T00:00:00`);
+
+            const formattedDate = birthday.toLocaleDateString("en-US", {
+                month: "short",
+                day: "numeric",
+                timeZone: "UTC"
+            });
+
+            return `
+                <div class="employeeItem">
+                    <div class="employeeInfo">
+                        <div class="avatar">
+                            <img src="${employee.image}" alt="${employee.name}">
+                        </div>
+
+                        <div class="userDetails">
+                            <h4>${employee.name}</h4>
+                            <p>${formattedDate}</p>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <p>${employee.department}</p>
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                </div>
+            `;
+        }).join("");
+
+    } catch (error) {
+        console.error("Error loading upcoming birthdays:", error);
+    }
+}
+
+renderUpcomingBirthdays();

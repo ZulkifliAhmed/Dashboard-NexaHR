@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- Goole Font -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Font awesome library -->
+
+    <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- Main style css -->
+    <!-- Main Style CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- Dashboard style css -->
+    <!-- Dashboard Style CSS -->
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="icon" href="assets/favicon.png">
     <title>NexaHR</title>
@@ -23,20 +24,22 @@
             <div class="close">
                 <i class="fa-solid fa-x"></i>
             </div>
-            <a href="" class="logo">
+
+            <a href="index.html" class="logo">
                 <div class="logoImg">
-                    <img src="assets/logo.png" alt="logo">
+                    <img src="assets/logo.png" alt="NexaHR logo">
                 </div>
-                    <span>NexaHR</span>
+                <span>NexaHR</span>
             </a>
+
             <nav>
                 <h4>main</h4>
                 <ul>
                     <li class="active">
-                    <a href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        <span>dashboard</span>
-                    </a>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>dashboard</span>
+                        </a>
                     </li>
                     <li>
                         <a href="employees.html">
@@ -69,6 +72,7 @@
                         </a>
                     </li>
                 </ul>
+
                 <h4>others</h4>
                 <ul>
                     <li class="sideBarNotifi">
@@ -85,17 +89,19 @@
                     </li>
                 </ul>
             </nav>
+
             <div class="user">
                 <div class="info">
                     <div class="avatar">
-                        <img src="assets/avatar.png" alt="admin">
+                        <img src="assets/avatar.png" alt="Admin">
                     </div>
                     <div class="name">
                         <p>ahmed hassan</p>
                         <span>admin</span>
                     </div>
                 </div>
-                <a href="">
+
+                <a href="#">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <span>logout</span>
                 </a>
@@ -108,301 +114,195 @@
                     <div class="big">
                         <i class="fa-solid fa-bars"></i>
                     </div>
+
                     <div class="mobile">
                         <i class="fa-solid fa-bars"></i>
                     </div>
+
+                    <!-- ========== Global Employee Search ========== -->
                     <div class="search">
                         <i class="fa-brands fa-sistrix"></i>
-                        <input type="search" placeholder="Search anything...">
+
+                        <input
+                            type="search"
+                            id="globalSearch"
+                            placeholder="Search employees..."
+                            autocomplete="off"
+                            aria-label="Search employees"
+                            aria-controls="searchResults"
+                            aria-expanded="false"
+                        >
+
+                        <div
+                            class="searchResults"
+                            id="searchResults"
+                            role="listbox"
+                            aria-label="Employee search results"
+                        ></div>
                     </div>
                 </div>
+
                 <div class="right">
                     <div class="notifi">
-                            <i class="fa-regular fa-bell"></i>
+                        <i class="fa-regular fa-bell"></i>
                     </div>
+
                     <div class="userInfo">
-                        <div class="avatar">
-                        <img src="assets/avatar.png" alt="admin">
+                        <div
+                            class="userInfo-trigger"
+                            aria-expanded="false"
+                            aria-label="Open user menu"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <div class="avatar">
+                                <img src="assets/avatar.png" alt="Admin">
+                            </div>
+
+                            <div class="user-links">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
                         </div>
-                        <div class="user-links">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
+
                         <ul class="drop-nav">
-                            <li><a href="">profile</a></li>
-                            <li><a href="">setting</a></li>
-                            <li><a href="">logout</a></li>
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </header>
+
             <!-- ========== Dashboard ========== -->
             <section class="dashboard">
                 <div class="titel">
                     <div class="text">
                         <h2>dashboard</h2>
-                        <p>Welcome back, Ahmed ! Here's what's happening today.</p>
+                        <p>Welcome back, Ahmed! Here's what's happening today.</p>
                     </div>
+
                     <div class="calendar">
                         <input type="date" name="date" id="date">
                     </div>
                 </div>
+
+                <!-- ========== Statistics Cards ========== -->
                 <div class="carts">
                     <div class="cart">
                         <i class="fa-solid fa-users"></i>
                         <div class="details">
                             <p>total employees</p>
-                            <div class="range" data-range="240">
-                                0
-                            </div>
+                            <div class="range">0</div>
                             <span>
                                 <i class="fa-solid fa-arrow-up"></i>
                                 12 this month
                             </span>
                         </div>
                     </div>
+
                     <div class="cart">
                         <i class="fa-solid fa-user-plus"></i>
                         <div class="details">
                             <p>active employees</p>
-                            <div class="range" data-range="221">
-                                0
-                            </div>
+                            <div class="range">0</div>
                             <span>
                                 <i class="fa-solid fa-arrow-up"></i>
                                 8 this month
                             </span>
                         </div>
                     </div>
+
                     <div class="cart">
                         <i class="fa-solid fa-calendar-days"></i>
                         <div class="details">
                             <p>on leave</p>
-                            <div class="range" data-range="12">
-                                0
-                            </div>
+                            <div class="range">0</div>
                             <span class="danger">
                                 <i class="fa-solid fa-arrow-down"></i>
                                 2 this month
                             </span>
                         </div>
                     </div>
+
                     <div class="cart">
                         <i class="fa-solid fa-user-minus"></i>
                         <div class="details">
                             <p>inactive employees</p>
-                            <div class="range" data-range="15">
-                                0
-                            </div>
+                            <div class="range">0</div>
                             <span class="danger">
                                 <i class="fa-solid fa-arrow-down"></i>
                                 1 this month
                             </span>
-                            </div>
+                        </div>
                     </div>
                 </div>
-                 <!-- ========== Charts ==========  -->
+
+                <!-- ========== Charts ========== -->
                 <div class="charts">
-                    <!-- Employees Overview -->
                     <div class="chart">
                         <h3>Employees Overview</h3>
                         <p>Employee growth over the months</p>
                         <div id="employeesOverview"></div>
                     </div>
-                    <!-- Employees by Department -->
+
                     <div class="chart">
                         <h3>Employees by Department</h3>
                         <p>Distribution of employees across departments</p>
                         <div id="employeesDepartment"></div>
                     </div>
                 </div>
-                <!-- ========== Recent and Upcoming ==========  -->
+
+                <!-- ========== Recent and Upcoming ========== -->
                 <div class="box">
-                    <!-- box items 1 -->
                     <div class="boxItems">
                         <div class="employeeItem">
                             <h3>recent employees</h3>
-                            <a href="">view all</a>
+                            <a href="employees.html">view all</a>
                         </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>front end developer</p>
-                                </div>
-                            </div>
-                            <p class ="titel">development</p>
-                            <div class="details">
-                                <p>may 27,2025</p>
-                                <div class="employeeLink">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                                <ul class="moreDetails">
-                                    <li><a href="">eddit</a></li>
-                                    <li><a href="">delete</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>front end developer</p>
-                                </div>
-                            </div>
-                            <p class ="titel">development</p>
-                            <div class="details">
-                                <p>may 27,2025</p>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-                        </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>front end developer</p>
-                                </div>
-                            </div>
-                            <p class ="titel">development</p>
-                            <div class="details">
-                                <p>may 27,2025</p>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-                        </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>front end developer</p>
-                                </div>
-                            </div>
-                            <p class ="titel">development</p>
-                            <div class="details">
-                                <p>may 27,2025</p>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-                        </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>front end developer</p>
-                                </div>
-                            </div>
-                            <p class ="titel">development</p>
-                            <div class="details">
-                                <p>may 27,2025</p>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-                        </div>
+
+                        <div class="employeeList"></div>
                     </div>
-                    <!-- box items 2 -->
+
                     <div class="boxItems">
                         <div class="employeeItem">
                             <h3>upcoming birthdays</h3>
-                            <a href="">view all</a>
+                            <a href="birthdays.html">view all</a>
                         </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>may 27</p>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <p>development</p>
-                                <i class="fa-solid fa-gift"></i>
-                            </div>
-                        </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>may 27</p>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <p>development</p>
-                                <i class="fa-solid fa-gift"></i>
-                            </div>
-                        </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>may 27</p>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <p>development</p>
-                                <i class="fa-solid fa-gift"></i>
-                            </div>
-                        </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>may 27</p>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <p>development</p>
-                                <i class="fa-solid fa-gift"></i>
-                            </div>
-                        </div>
-                        <div class="employeeItem">
-                            <div class="employeeInfo">
-                                <div class="avatar">
-                                    <img src="assets/avatar.png" alt="employee-image">
-                                </div>
-                                <div class="userDetails">
-                                    <h4>omar faruk</h4>
-                                    <p>may 27</p>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <p>development</p>
-                                <i class="fa-solid fa-gift"></i>
-                            </div>
-                        </div>
+
+                        <div class="birthdayList"></div>
                     </div>
                 </div>
             </section>
-        </main> 
+        </main>
     </div>
-    <!-- Font awesome library -->
+
+    <!-- Font Awesome Library -->
     <script src="js/all.min.js"></script>
-    <!-- ApexCharts library -->
+
+    <!-- ApexCharts Library -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <!-- Dashbord fiel -->
-    <script src="js/dashboard.js"></script>
-    <!-- Main js fiel -->
+
+    <!-- Main JavaScript -->
     <script src="js/main.js"></script>
+
+    <!-- Dashboard JavaScript -->
+    <script src="js/dashboard.js"></script>
 </body>
 </html>

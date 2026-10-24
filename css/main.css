@@ -1,6 +1,6 @@
 
 /* ========== Root ========== */
-:root{
+:root {
     --primary-color: #fefefe;
     --background-color: #f9fafc;
     --text-color: #64748b;
@@ -14,55 +14,65 @@
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     --main-transition: .7s ease-in-out;
 }
+
 /* ========== Global Styles ========== */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Poppins", sans-serif;
     background-color: var(--primary-color);
     line-height: 1.4;
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.avatar{
+
+.avatar {
     width: 35px;
     height: 35px;
     overflow: hidden;
     border-radius: 50%;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 h3 {
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
     color: var(--dark-color);
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: auto 1fr;
 }
+
 /* ========== Sidebar ========== */
-aside{
+aside {
     width: 220px;
     min-height: 130vh;
     position: relative;
     padding: 20px 10px;
     border-radius: 15px 0 0 15px;
     background-color: var(--dark-color);
-   transition: var(--main-transition);
+    transition: var(--main-transition);
 }
-aside .fa-x{
+
+aside .fa-x {
     font-size: 20px;
     color: var(--primary-color);
     cursor: pointer;
@@ -71,7 +81,8 @@ aside .fa-x{
     top: 15px;
     display: none;
 }
-aside .logo{
+
+aside .logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,20 +90,24 @@ aside .logo{
     gap: 10px;
     margin-left: 10px;
 }
-aside .logo .logoImg{
+
+aside .logo .logoImg {
     width: 30px;
     height: 30px;
 }
-aside .logo span{
+
+aside .logo span {
     margin-top: 7px;
     font-size: 19px;
     font-weight: 600;
     color: var(--primary-color);
 }
-aside nav{
+
+aside nav {
     padding-top: 25px;
 }
-aside nav h4{
+
+aside nav h4 {
     margin: 10px;
     font-size: 16px;
     font-weight: 400;
@@ -100,14 +115,17 @@ aside nav h4{
     color: var(--text-color);
     cursor: default;
 }
-aside nav li{
+
+aside nav li {
     margin-bottom: 15px;
 }
-aside nav li.active{
+
+aside nav li.active {
     border-radius: 7px;
     background-color: var(--bulle-color);
 }
-aside nav li a{
+
+aside nav li a {
     display: flex;
     gap: 15px;
     padding: 12px;
@@ -115,34 +133,40 @@ aside nav li a{
     text-transform: capitalize;
     color: var(--primary-color);
 }
-aside nav li a span{
+
+aside nav li a span {
     font-size: 15px;
     font-weight: 400;
 }
-aside .user{
+
+aside .user {
     position: absolute;
-    bottom: 25px;
+    margin-top: 50px;
     width: 90%;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid var(--border-color);
     text-transform: capitalize;
 }
-aside .user .info{
+
+aside .user .info {
     display: flex;
     gap: 10px;
     color: var(--primary-color);
     cursor: default;
 }
-aside .user .name p{
+
+aside .user .name p {
     font-size: 14px;
     font-weight: 400;
 }
-aside .user .name span{
+
+aside .user .name span {
     font-size: 13px;
     font-weight: 300;
 }
-aside .user a{
+
+aside .user a {
     width: fit-content;
     margin-top: 10px;
     display: flex;
@@ -153,56 +177,69 @@ aside .user a{
     color: var(--primary-color);
     transition: var(--main-transition);
 }
-aside .user a:hover{
+
+aside .user a:hover {
     color: var(--bulle-color);
-} 
-/* ========== toggle Sidebar ========== */
-.toggleAside{
+}
+
+/* ========== Toggle Sidebar ========== */
+.toggleAside {
     width: fit-content;
     border-radius: 0;
     padding: 30px 10px;
 }
-.toggleAside span{
+
+.toggleAside span {
     display: none;
 }
-.toggleAside h4{
+
+.toggleAside h4 {
     display: none;
 }
-.toggleAside .logo .logoImg{
+
+.toggleAside .logo .logoImg {
     width: 25px;
     height: 25px;
 }
-.toggleAside nav{
+
+.toggleAside nav {
     padding-top: 20px;
 }
-.toggleAside nav li{
+
+.toggleAside nav li {
     margin-bottom: 5px;
     width: fit-content;
 }
-.toggleAside nav li a{
+
+.toggleAside nav li a {
     padding: 10px;
 }
-.toggleAside nav .sideBarNotifi::after{
+
+.toggleAside nav .sideBarNotifi::after {
     top: 50%;
     left: 35%;
 }
-.toggleAside .user{
+
+.toggleAside .user {
     position: relative;
     padding: 30px 10px;
-    border: 0px;
+    border: 0;
 }
-.toggleAside .user .info{
+
+.toggleAside .user .info {
     display: none;
 }
-/* ========== Main Content ==========  */
-main{
-    border-radius:0 15px 15px 0;
+
+/* ========== Main Content ========== */
+main {
+    border-radius: 0 15px 15px 0;
     background-color: var(--background-color);
     border: 1px solid var(--border-color);
     border-left: 0;
     overflow: hidden;
 }
-main header{
+
+main header {
     width: 100%;
     padding: 10px 20px;
     display: flex;
@@ -211,56 +248,179 @@ main header{
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow);
 }
+
 main header .left,
 main header .right,
-main header .right .userInfo{
+main header .right .userInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-main header .left .fa-bars{
+
+main header .left .fa-bars {
     font-size: 20px;
     cursor: pointer;
     color: var(--dark-color);
 }
-main header .left .mobile{
+
+main header .left .mobile {
     display: none;
 }
-main header .left .search{
+
+/* ========== Global Employee Search ========== */
+main header .left .search {
     position: relative;
     width: 250px;
 }
-main header .left .search input{
+
+main header .left .search input {
+    display: block;
     width: 100%;
-    padding: 10px;
-    padding-left: 35px;
-    border-radius: 5px;
-    color: var(--text-color);
+    padding: 10px 12px 10px 35px;
+    border-radius: 7px;
+    color: var(--dark-color);
     background-color: var(--background-color);
-    border: none;
+    border: 1px solid transparent;
     outline: none;
+    font-family: inherit;
+    font-size: 13px;
+    transition: border-color .2s ease, box-shadow .2s ease;
 }
-main header .left .search input::placeholder{
-    font-size: 14px;
+
+main header .left .search input:focus {
+    border-color: var(--bulle-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, .08);
+}
+
+main header .left .search input::placeholder {
+    font-size: 13px;
     color: var(--text-color);
 }
-main header .left .search .fa-sistrix{
+
+main header .left .search .fa-sistrix {
     position: absolute;
     top: 50%;
+    left: 10px;
     transform: translateY(-50%);
-    padding-left: 10px;
     color: var(--text-color);
-    cursor: pointer;
+    pointer-events: none;
+    z-index: 1;
 }
+
+/* Search Results Dropdown */
+main header .left .search .searchResults {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 320px;
+    max-width: min(320px, calc(100vw - 30px));
+    max-height: 350px;
+    overflow-y: auto;
+    padding: 6px;
+
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, .12);
+
+    display: none;
+    z-index: 1000;
+}
+
+main header .left .search .searchResults.show {
+    display: block;
+}
+
+/* Individual Search Result */
+main header .left .search .searchResult {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: background-color .2s ease;
+}
+
+main header .left .search .searchResult:hover,
+main header .left .search .searchResult:focus-visible {
+    background-color: var(--background-color);
+    outline: none;
+}
+
+/* Search Result Avatar */
+main header .left .search .searchResult .resultAvatar {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #EEF2FF;
+    color: var(--bulle-color);
+}
+
+main header .left .search .searchResult .resultAvatar i {
+    font-size: 15px;
+}
+
+/* Search Result Text */
+main header .left .search .searchResult .resultInfo {
+    min-width: 0;
+    flex: 1;
+}
+
+main header .left .search .searchResult .resultInfo h4 {
+    margin: 0 0 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+main header .left .search .searchResult .resultInfo p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 11px;
+    color: var(--text-color);
+}
+
+/* No Search Results */
+main header .left .search .searchResults .noResults {
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+/* Search Results Scrollbar */
+main header .left .search .searchResults::-webkit-scrollbar {
+    width: 5px;
+}
+
+main header .left .search .searchResults::-webkit-scrollbar-thumb {
+    background-color: #CBD5E1;
+    border-radius: 10px;
+}
+
+/* ========== Notifications Count ========== */
 aside nav .sideBarNotifi,
-main header .right .notifi{
+main header .right .notifi {
     position: relative;
 }
+
 aside nav .sideBarNotifi::after,
-main header .right .notifi::after{
+main header .right .notifi::after {
     position: absolute;
-    content: "3";
+    content: attr(data-count);
     background-color: var(--danger-color);
     color: var(--primary-color);
     border-radius: 50%;
@@ -272,106 +432,241 @@ main header .right .notifi::after{
     height: 15px;
     animation: outlineAn 2s linear infinite;
 }
+
 @keyframes outlineAn {
-  0% {
-    scale: 0;
-  }
-  50% {
-    scale: 1;
-  }
-  100% {
-    scale: 1.5;
-    opacity: .7;
-  }
+    0% {
+        scale: 0;
+    }
+
+    50% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.5;
+        opacity: .7;
+    }
 }
-aside nav .sideBarNotifi::after{
+
+aside nav .sideBarNotifi::after {
     top: 30%;
     left: 90%;
 }
-main header .right .notifi::after{
+
+main header .right .notifi::after {
     top: -25%;
     left: 50%;
 }
-.right .notifi .fa-bell{
+
+aside nav .sideBarNotifi[data-count="0"]::after,
+main header .right .notifi[data-count="0"]::after {
+    display: none;
+}
+
+.right .notifi .fa-bell {
     font-size: 19px;
     cursor: pointer;
     color: var(--dark-color);
     animation: moveBell 1.5s linear infinite;
 }
+
 @keyframes moveBell {
-  0% {
-    rotate: 45deg;
-  }
-  50% {
-    rotate: -45deg;
-  }
-  100% {
-    rotate: 45deg;
-  }
+    0% {
+        rotate: 45deg;
+    }
+
+    50% {
+        rotate: -45deg;
+    }
+
+    100% {
+        rotate: 45deg;
+    }
 }
-main header .userInfo .fa-chevron-down{
-    margin-left: -10px;
-    font-size: 14px;
+
+/* ========== User Dropdown Menu ========== */
+main header .userInfo {
+    position: relative;
+}
+
+/* Clickable Avatar and Arrow */
+main header .userInfo .userInfo-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
     cursor: pointer;
+    transition: .2s ease;
+}
+
+main header .userInfo .userInfo-trigger:hover,
+main header .userInfo.active .userInfo-trigger {
+    background-color: #f1f5f9;
+    border-color: var(--border-color);
+}
+
+main header .userInfo .userInfo-trigger .avatar {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+main header .userInfo .userInfo-trigger .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main header .userInfo .user-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+main header .userInfo .user-links .fa-chevron-down {
+    font-size: 12px;
+    transition: transform .2s ease;
+}
+
+main header .userInfo.active .user-links .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Panel */
+main header .userInfo .drop-nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    z-index: 1000;
+    width: 200px;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    list-style: none;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, .12);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    pointer-events: none;
+
+    transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+}
+
+main header .userInfo.active .drop-nav {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+main header .userInfo .drop-nav li {
+    margin: 0;
+}
+
+main header .userInfo .drop-nav li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 11px 12px;
+    border-radius: 8px;
     color: var(--dark-color);
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: background-color .2s ease, color .2s ease;
 }
-main header .userInfo .drop-nav{
-  width: 100px;
-  padding: 15px;
-  border-radius: 0 0 5px 5px;
-  list-style: none;
-  position: absolute;
-  top: 55px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  box-shadow: var(--shadow);
-  background-color: var(--primary-color);
-  border: 1px solid var(--border-color);
-  display: none;
+
+main header .userInfo .drop-nav li a i {
+    width: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+    transition: color .2s ease;
 }
-.show{
+
+main header .userInfo .drop-nav li a:hover {
+    background-color: #eef2ff;
+    color: var(--bulle-color);
+}
+
+main header .userInfo .drop-nav li a:hover i {
+    color: var(--bulle-color);
+}
+
+/* Separate the Logout Option */
+main header .userInfo .drop-nav li:last-child {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid var(--border-color);
+}
+
+main header .userInfo .drop-nav li:last-child a:hover {
+    background-color: #fef2f2;
+    color: var(--danger-color);
+}
+
+main header .userInfo .drop-nav li:last-child a:hover i {
+    color: var(--danger-color);
+}
+
+/* ========== Utility Class ========== */
+.show {
     display: block !important;
 }
-main header .userInfo .drop-nav a{
-  font-size: 14px;
-  color: var(--dark-color);
-  text-transform: capitalize;
-}
+
 /* ========== Dashboard ========== */
-.dashboard{
+.dashboard {
     padding: 30px 20px;
 }
-.dashboard .titel{
+
+.dashboard .titel {
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
-.dashboard .titel .breadcrumb{
+
+.dashboard .titel .breadcrumb {
     margin-bottom: 5px;
     cursor: default;
     color: var(--text-color);
     font-size: 14px;
     font-weight: 400;
 }
-.dashboard .titel .breadcrumb a{
+
+.dashboard .titel .breadcrumb a {
     color: var(--text-color);
 }
-.dashboard .titel h2{
-    text-transform: capitalize; 
+
+.dashboard .titel h2 {
+    text-transform: capitalize;
     color: var(--dark-color);
     font-weight: 600;
     font-size: 23px;
     margin-bottom: 5px;
 }
-.dashboard .titel p{
+
+.dashboard .titel p {
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: 400;
     color: var(--text-color);
     cursor: default;
 }
-.dashboard .titel .add a{
+
+.dashboard .titel .add a {
     padding: 8px 15px;
     border-radius: 7px;
     font-size: 13px;
@@ -380,16 +675,19 @@ main header .userInfo .drop-nav a{
     background-color: var(--bulle-color);
     text-transform: capitalize;
 }
+
 /* ========== Cards ========== */
 .carts,
-.carts .cart{
+.carts .cart {
     display: flex;
     align-items: center;
 }
-.carts{
+
+.carts {
     justify-content: space-between;
 }
-.carts .cart{
+
+.carts .cart {
     min-width: 250px;
     padding: 15px;
     border-radius: 10px;
@@ -399,227 +697,298 @@ main header .userInfo .drop-nav a{
     cursor: default;
     box-shadow: var(--shadow);
 }
+
 .carts .cart .fa-users,
 .carts .cart .fa-user-plus,
 .carts .cart .fa-calendar-days,
-.carts .cart .fa-user-minus{
+.carts .cart .fa-user-minus {
     padding: 10px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     color: var(--primary-color);
 }
-.carts .cart .fa-users{
+
+.carts .cart .fa-users {
     background-color: var(--bulle-color);
 }
-.carts .cart .fa-user-plus{
+
+.carts .cart .fa-user-plus {
     background-color: var(--success-color);
 }
-.carts .cart .fa-calendar-days{
+
+.carts .cart .fa-calendar-days {
     background-color: var(--warning-clor);
 }
-.carts .cart .fa-user-minus{
+
+.carts .cart .fa-user-minus {
     background-color: var(--danger-color);
 }
-.carts .cart p{
+
+.carts .cart p {
     font-size: 15px;
     text-transform: capitalize;
     color: var(--text-color);
 }
-.carts .cart .range{
+
+.carts .cart .range {
     font-size: 20px;
     font-weight: 600;
     color: var(--dark-color);
     margin: 5px 0;
 }
-.carts .cart span{
+
+.carts .cart span {
     font-size: 13px;
     color: var(--success-color);
 }
-.carts .cart span.danger{
+
+.carts .cart span.danger {
     color: var(--danger-color);
 }
-/* ========== Media Query ==========  */
-/* applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-.container{
-    grid-template-columns: auto 1fr;
+
+/* ========== Media Query ========== */
+
+/* Large Devices: Less than 1200px */
+@media (max-width: 1199.98px) {
+    .container {
+        grid-template-columns: auto 1fr;
+    }
+
+    aside {
+        width: 200px;
+    }
+
+    aside .logo span {
+        font-size: 18px;
+    }
+
+    aside nav h4 {
+        font-size: 14px;
+    }
+
+    aside nav li a {
+        padding: 8px 10px;
+        font-size: 17px;
+    }
+
+    aside nav li a span {
+        font-size: 13px;
+    }
+
+    aside .user {
+        padding: 15px 10px;
+    }
+
+    aside .user a {
+        gap: 10px;
+    }
+
+    aside .user .name p,
+    aside .user .name span {
+        font-size: 12px;
+    }
+
+    aside .user a {
+        font-size: 12px;
+    }
+
+    .dashboard {
+        padding: 30px 15px;
+    }
+
+    .carts {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carts .cart {
+        min-width: 250px;
+    }
+
+    .carts .cart .fa-users,
+    .carts .cart .fa-user-plus,
+    .carts .cart .fa-calendar-days,
+    .carts .cart .fa-user-minus {
+        width: 25px;
+        height: 25px;
+    }
+
+    .carts .cart p:last-child {
+        font-size: 8px;
+    }
+
+    .carts .cart .range {
+        font-size: 18px;
+    }
 }
-aside{
-    width: 200px;
-}
-aside .logo span{
-    font-size: 18px;
-}
-aside nav h4{
-    font-size: 14px;
-}
-aside nav li a{
-    padding: 8px 10px;
-    font-size: 17px;
-}
-aside nav li a span{
-    font-size: 13px;
-}
-aside .user{
-    padding: 15px 10px;
-}
-aside .user a{
-    gap: 10px;
-}
-aside .user .name p,
-aside .user .name span{
-    font-size: 12px;
-}
-aside .user a{
-    font-size: 12px;
-}
-.dashboard{
-    padding: 30px 15px;
-}
-.carts{
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.carts .cart{
-    min-width: 250px;
-}
-.carts .cart .fa-users,
-.carts .cart .fa-user-plus,
-.carts .cart .fa-calendar-days,
-.carts .cart .fa-user-minus{
-    width: 25px;
-    height: 25px;
-}
-.carts .cart p:last-child{
-    font-size: 8px;
-}
-.carts .cart .range{
-    font-size: 18px;
-}
-}
-/* `lg` applies to medium devices (tablets, less than 992px) */
+
+/* Medium Devices: Less than 992px */
 @media (max-width: 991.98px) {
-.main header .left .search{
-    width: 200px;
+    main header .left .search {
+        width: 200px;
+    }
+
+    .dashboard .head h2 {
+        font-size: 20px;
+    }
 }
-.dashboard .head h2{
-    font-size: 20px;
+
+/* Small Devices: Less than 768px */
+@media (max-width: 767.98px) {
+    .container {
+        grid-template-columns: auto;
+        position: relative;
+    }
+
+    aside {
+        min-height: 100vh;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        z-index: 999;
+        border-radius: 0 10px 10px 0;
+        transition: var(--main-transition);
+        left: -200px;
+    }
+
+    aside .fa-x {
+        display: block;
+    }
+
+    aside .logo .logoImg {
+        width: 25px;
+        height: 25px;
+    }
+
+    aside .logo span {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    aside nav {
+        padding-top: 0;
+    }
+
+    aside nav h4 {
+        margin: 20px 0 5px 10px;
+        font-size: 14px;
+    }
+
+    aside nav li {
+        margin-bottom: 5px;
+    }
+
+    aside nav li.active {
+        border-radius: 5px;
+    }
+
+    aside nav li a {
+        gap: 8px;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    aside nav li a span {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    aside .user {
+        position: absolute;
+        bottom: 20px;
+        padding: 10px;
+        border: 0;
+    }
+
+    aside .user .info {
+        display: none;
+    }
+
+    main header .left .mobile {
+        display: block;
+    }
+
+    main header .left .big {
+        display: none;
+    }
 }
-}
-/* `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {  
-.container{
-    grid-template-columns:  auto;
-    position: relative;
-}
-aside{
-    min-height: 100vh;
-    width: 200px;
-    height: 100vh;
-    position: fixed;
-    z-index: 999;
-    border-radius: 0 10px 10px 0;
-    transition: var(--main-transition);
-    left: -200px;
-}
-aside .fa-x{
-    display: block;
-}
-aside .logo .logoImg{
-    width: 25px;
-    height: 25px;
-}
-aside .logo span{
-    font-size: 17px;
-    font-weight: 500;
-}
-aside nav{
-    padding-top: 0px;
-}
-aside nav h4{
-    margin: 20px 0 5px 10px;
-    font-size: 14px;
-}
-aside nav li{
-    margin-bottom: 5px;
-}
-aside nav li.active{
-    border-radius: 5px;
-}
-aside nav li a{
-    gap: 8px;
-    padding: 8px;
-    font-size: 16px;
-}
-aside nav li a span{
-    font-size: 14px;
-    font-weight: 300;
-}
-aside .user{
-    position: absolute;
-    bottom: 20px;
-    padding: 10px;
-    border: 0px;
-}
-aside .user .info{
-    display: none;
-}
-main header .left .mobile{
-    display: block;
-}
-main header .left .big{
-    display: none;
-}
-}
-/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+
+/* Extra Small Devices: Less than 576px */
 @media (max-width: 575.98px) {
-h3 {
-    font-size: 14px;
-}
-main{
-    border-radius: 0;
-}
-main header{
-    padding: 10px;
-}
-main header .left .search{
-    width: 150px;
-}
-main header .left .search input{
-    padding: 5px;
-    padding-left: 30px;
-}
-main header .left .search input::placeholder{
-    font-size: 12px;
-}
-main header .left .search .fa-sistrix{
-    padding-left: 5px;
-}
-aside nav .sideBarNotifi::after,
-main header .right .notifi::after{
-    font-weight: 500;
-    width: 13px;
-    height: 13px;
-}
-.right .notifi .fa-bell{
-    font-size: 15px;
-}
-main header .userInfo .fa-chevron-down{
-    font-size: 12px;
-}
-main header .userInfo .drop-nav{
-  width: 80px;
-}
-.dashboard .titel .breadcrumb,
-.dashboard .titel .add{
-   display: none;
-}
-.dashboard .titel h2{
-    font-size: 15px;
-}
-.dashboard .titel p{
-    font-size: 13px;
-}
+    h3 {
+        font-size: 14px;
+    }
+
+    main {
+        border-radius: 0;
+    }
+
+    main header {
+        padding: 10px;
+    }
+
+    main header .left {
+        gap: 10px;
+    }
+
+    main header .left .search {
+        width: 150px;
+    }
+
+    main header .left .search input {
+        padding: 7px 5px 7px 30px;
+    }
+
+    main header .left .search input::placeholder {
+        font-size: 12px;
+    }
+
+    main header .left .search .fa-sistrix {
+        left: 5px;
+    }
+
+    main header .left .search .searchResults {
+        width: 280px;
+        max-width: calc(100vw - 20px);
+    }
+
+    aside nav .sideBarNotifi::after,
+    main header .right .notifi::after {
+        font-weight: 500;
+        width: 13px;
+        height: 13px;
+    }
+
+    .right .notifi .fa-bell {
+        font-size: 15px;
+    }
+
+    main header .userInfo .userInfo-trigger {
+        gap: 6px;
+        padding: 5px;
+    }
+
+    main header .userInfo .userInfo-trigger .avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    main header .userInfo .drop-nav {
+        width: min(200px, calc(100vw - 24px));
+    }
+
+    .dashboard .titel .breadcrumb,
+    .dashboard .titel .add {
+        display: none;
+    }
+
+    .dashboard .titel h2 {
+        font-size: 15px;
+    }
+
+    .dashboard .titel p {
+        font-size: 13px;
+    }
 }

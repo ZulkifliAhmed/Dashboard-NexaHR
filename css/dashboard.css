@@ -2,48 +2,54 @@
 .dashboard .calendar {
     box-shadow: var(--shadow);
 }
-.dashboard .calendar input{
+
+.dashboard .calendar input {
     padding: 8px 12px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     font-size: 14px;
     background-color: var(--primary-color);
 }
+
 /* ========== Charts ========== */
-.charts{
+.charts {
     display: grid;
     grid-template-columns: 60% auto;
     gap: 20px;
     margin: 25px 0;
 }
-.chart{
-    height: 300px;
-    padding: 20px;
+
+.chart {
+    padding: 20px 20px 0;
     border-radius: 12px;
     background: var(--primary-color);
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
 }
-.chart p{
+
+.chart p {
     margin: 10px 0 20px;
     font-size: 14px;
     color: var(--text-color);
-} 
+}
+
 /* ========== Recent and Upcoming ========== */
-.box{
+.box {
     display: grid;
     grid-template-columns: 60% auto;
     gap: 20px;
     margin: 25px 0;
 }
-.box .boxItems{
+
+.box .boxItems {
     padding: 20px;
     border-radius: 12px;
     background: var(--primary-color);
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
 }
-.box .boxItems .employeeItem{
+
+.box .boxItems .employeeItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,128 +58,213 @@
     cursor: default;
     border-bottom: 1px solid var(--border-color);
 }
-.box .boxItems .employeeItem:first-child{
+
+.box .boxItems .employeeItem:first-child {
     padding-bottom: 15px;
 }
-.box .boxItems .employeeItem:last-child{
+
+.box .boxItems .employeeItem:last-child {
     border-bottom: none;
 }
-.box .boxItems .employeeItem a{
+
+.box .boxItems .employeeItem a {
     color: var(--bulle-color);
     font-size: 14px;
 }
+
 .box .employeeItem .employeeInfo,
-.box .boxItems .employeeItem .details{
+.box .boxItems .employeeItem .details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
 }
-.box .boxItems .employeeItem h4{
+
+.box .boxItems .employeeItem h4 {
     font-size: 14px;
     font-weight: 500;
     color: var(--dark-color);
 }
-.box .boxItems .employeeItem p{
+
+.box .boxItems .employeeItem p {
     font-size: 13px;
     font-weight: 400;
     color: var(--text-color);
 }
-.box .boxItems .employeeItem .details{
+
+.box .boxItems .employeeItem .details {
     gap: 30px;
     position: relative;
 }
-.box .boxItems .details .fa-ellipsis-vertical{
+
+.box .boxItems .details .fa-ellipsis-vertical {
     font-size: 14px;
     cursor: pointer;
     color: var(--dark-color);
 }
-.box .boxItems .details ul{
-  padding: 10px;
-  list-style: none;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  box-shadow: var(--shadow);
-  background-color: var(--primary-color);
-  border: 1px solid var(--border-color);
-  z-index: 99;
-  display: none;
+
+/* ========== Employee Actions Dropdown ========== */
+.box .boxItems .details ul.moreDetails {
+    min-width: 135px;
+    padding: 6px;
+    margin: 0;
+    list-style: none;
+
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+
+    z-index: 99;
 }
-.box .boxItems .details ul a{
+
+/* Show dropdown */
+.box .boxItems .details ul.moreDetails.show {
+    display: flex;
+}
+
+/* Dropdown items */
+.box .boxItems .details ul.moreDetails li {
+    width: 100%;
+}
+
+/* Dropdown links */
+.box .boxItems .details ul.moreDetails li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 9px 12px;
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+
     color: var(--dark-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
-.box .boxItems .details .fa-gift{
+
+/* Edit hover */
+.box .boxItems .details ul.moreDetails li a.editEmployee:hover {
+    background-color: #EEF2FF;
+    color: #4F46E5;
+}
+
+/* Delete */
+.box .boxItems .details ul.moreDetails li a.deleteEmployee {
+    color: var(--danger-color);
+}
+
+/* Delete hover */
+.box .boxItems .details ul.moreDetails li a.deleteEmployee:hover {
+    background-color: #FEF2F2;
+    color: #DC2626;
+}
+
+/* ========== Birthday Icon ========== */
+.box .boxItems .details .fa-gift {
     font-size: 15px;
     color: var(--danger-color);
     cursor: pointer;
 }
-/* ========== Media Query ==========  */
-/* applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-.charts,
-.box{
-    grid-template-columns: auto 40%;
-    gap: 15px;
+
+/* ========== Media Query ========== */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .charts,
+    .box {
+        grid-template-columns: auto 40%;
+        gap: 15px;
+    }
+
+    .chart {
+        padding: 15px;
+    }
+
+    .chart p {
+        font-weight: 300;
+    }
+
+    .box .boxItems {
+        padding: 15px;
+    }
+
+    .box .boxItems .employeeItem {
+        padding: 6px 0;
+    }
+
+    .box .employeeItem .employeeInfo,
+    .box .boxItems .employeeItem .details {
+        gap: 10px;
+    }
+
+    .box .boxItems .employeeItem h4 {
+        font-size: 13px;
+    }
+
+    .box .boxItems .employeeItem p {
+        font-size: 12px;
+    }
+
+    .box .boxItems .employeeItem .details {
+        gap: 20px;
+    }
 }
-.chart{
-    padding: 15px;
-}
-.chart p{
-    font-weight: 300;
-}
-.box .boxItems{
-    padding: 15px;
-}
-.box .boxItems .employeeItem{
-    padding: 6px 0;
-}
-.box .employeeItem .employeeInfo,
-.box .boxItems .employeeItem .details{
-    gap: 10px;
-}
-.box .boxItems .employeeItem h4{
-    font-size: 13px;
-}
-.box .boxItems .employeeItem p{
-    font-size: 12px;
-}
-.box .boxItems .employeeItem .details{
-    gap: 20px;
-}
-}
-/* `lg` applies to medium devices (tablets, less than 992px) */
+
+/* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-.dashboard .calendar input{
-    padding: 5px 8px;
-    font-size: 14px;
+    .dashboard .calendar input {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    .charts,
+    .box {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
-.charts,
-.box{
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-}
-/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+
+/* Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-.dashboard .calendar{
-    display: none;
+    .dashboard .calendar {
+        display: none;
+    }
+
+    .chart {
+        padding: 10px;
+    }
+
+    .chart p {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .box .boxItems .employeeItem a {
+        font-size: 12px;
+    }
+
+    .box .boxItems .employeeItem .titel {
+        display: none;
+    }
+
+    .box .boxItems .employeeItem .details {
+        gap: 10px;
+    }
+
+    /* Dropdown on small screens */
+    .box .boxItems .details ul.moreDetails {
+        min-width: 125px;
+    }
 }
-.chart{
-    padding: 10px;
-}
-.chart p{
-    margin: 10px 0;
-    font-size: 12px;
-}
-.box .boxItems .employeeItem a{
-    font-size: 12px;
-}
-.box .boxItems .employeeItem .titel{
-   display: none;
-}
-.box .boxItems .employeeItem .details {
-    gap: 10px;
-}
-}
- 
