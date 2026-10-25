@@ -267,39 +267,32 @@ async function renderRecentEmployees() {
 }
 
 renderRecentEmployees();
-// Employee Dropdown Menu
-document.addEventListener("click", function (e) {
-    const clickedButton = e.target.closest(".employeeLink");
 
-    // Open or close the selected menu
-    if (clickedButton) {
-        const details = clickedButton.closest(".details");
-        const menu = details.querySelector(".moreDetails");
+ // Employee Dropdown Menu
+document.addEventListener("click", function (e) {
+    const button = e.target.closest(".employeeLink");
+
+    // If an employee button is clicked
+    if (button) {
+        const menu = button.closest(".details").querySelector(".moreDetails");
 
         if (!menu) return;
 
-        // Close all other menus
+        // Close other menus
         document.querySelectorAll(".moreDetails.show").forEach(item => {
-            if (item !== menu) {
-                item.classList.remove("show");
-            }
+            item.classList.remove("show");
         });
 
         // Toggle the selected menu
         menu.classList.toggle("show");
-
-        return;
-    }
-
-    // Keep the menu open when clicking inside it
-    if (e.target.closest(".moreDetails")) {
-        return;
     }
 
     // Close menus when clicking outside
-    document.querySelectorAll(".moreDetails.show").forEach(menu => {
-        menu.classList.remove("show");
-    });
+    else if (!e.target.closest(".moreDetails")) {
+        document.querySelectorAll(".moreDetails.show").forEach(menu => {
+            menu.classList.remove("show");
+        });
+    }
 });
 
 // Close menus with Escape
@@ -310,7 +303,6 @@ document.addEventListener("keydown", function (e) {
         });
     }
 });
-
 
 async function renderUpcomingBirthdays() {
     try {
