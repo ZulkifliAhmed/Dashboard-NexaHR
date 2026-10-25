@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Goole Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main style css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Employees style css -->
+    <link rel="stylesheet" href="css/employees.css">
+    <link rel="icon" href="assets/favicon.png">
+    <title>Employees | NexaHR</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ========== Sidebar ========== -->
+        <aside>
+            <div class="close">
+                <i class="fa-solid fa-x"></i>
+            </div>
+
+            <a href="index.html" class="logo">
+                <div class="logoImg">
+                    <img src="assets/logo.png" alt="logo">
+                </div>
+                <span>NexaHR</span>
+            </a>
+
+            <nav>
+                <h4>main</h4>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>dashboard</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="employees.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span>employees</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="departments.html">
+                            <i class="fa-solid fa-hand-holding-hand"></i>
+                            <span>departments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="attendance.html">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>attendance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaveRequests.html">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>leave requests</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <span>reports</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <h4>others</h4>
+                <ul>
+                    <li class="sideBarNotifi">
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            <span>notifications</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="user">
+                <div class="info">
+                    <div class="avatar">
+                        <img src="assets/avatar.png" alt="admin">
+                    </div>
+                    <div class="name">
+                        <p>ahmed hassan</p>
+                        <span>admin</span>
+                    </div>
+                </div>
+
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ========== Main Content ========== -->
+        <main>
+           <header>
+                <div class="left">
+                    <div class="big">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ========== Global Employee Search ========== -->
+                    <div class="search">
+                        <i class="fa-brands fa-sistrix"></i>
+
+                        <input
+                            type="search"
+                            id="globalSearch"
+                            placeholder="Search employees..."
+                            autocomplete="off"
+                            aria-label="Search employees"
+                            aria-controls="searchResults"
+                            aria-expanded="false"
+                        >
+
+                        <div
+                            class="searchResults"
+                            id="searchResults"
+                            role="listbox"
+                            aria-label="Employee search results"
+                        ></div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="notifi">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+
+                    <div class="userInfo">
+                        <div
+                            class="userInfo-trigger"
+                            aria-expanded="false"
+                            aria-label="Open user menu"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <div class="avatar">
+                                <img src="assets/avatar.png" alt="Admin">
+                            </div>
+
+                            <div class="user-links">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="drop-nav">
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Employees ========== -->
+            <section class="employeesPage">
+                <div class="employeesTitle">
+                    <div>
+                        <div class="employeesBreadcrumb">
+                            <a href="index.html">Dashboard</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>Employees</span>
+                        </div>
+                        <h2>Employees</h2>
+                        <p>Manage your employees and their information.</p>
+                    </div>
+
+                    <button class="addEmployeeBtn" id="openEmployeeForm">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Employee
+                    </button>
+                </div>
+
+                <!-- ========== Statistics ========== -->
+                <div class="employeeStats">
+                    <div class="employeeStat">
+                        <div>
+                            <p>Total Employees</p>
+                            <h3 id="totalEmployees">0</h3>
+                        </div>
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="employeeStat">
+                        <div>
+                            <p>Active Employees</p>
+                            <h3 id="activeEmployees">0</h3>
+                        </div>
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <div class="employeeStat">
+                        <div>
+                            <p>On Leave</p>
+                            <h3 id="onLeaveEmployees">0</h3>
+                        </div>
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+
+                    <div class="employeeStat">
+                        <div>
+                            <p>Inactive Employees</p>
+                            <h3 id="inactiveEmployees">0</h3>
+                        </div>
+                        <i class="fa-solid fa-user-minus"></i>
+                    </div>
+                </div>
+
+                <!-- ========== Employee List ========== -->
+                <div class="employeesContent">
+
+                    <div class="employeesContentHeader">
+                        <div>
+                            <h3>All Employees</h3>
+                            <p>View and manage your team members.</p>
+                        </div>
+                    </div>
+
+                    <div class="employeeFilters">
+                        <div class="employeeSearch">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input
+                                type="search"
+                                id="employeeSearch"
+                                placeholder="Search name, email or position..."
+                            >
+                        </div>
+
+                        <select id="departmentFilter">
+                            <option value="">All Departments</option>
+                        </select>
+
+                        <select id="statusFilter">
+                            <option value="">All Statuses</option>
+                            <option value="Active">Active</option>
+                            <option value="On Leave">On Leave</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+
+                    <div class="employeeTableWrapper">
+                        <table class="employeeTable">
+                            <thead>
+                                <tr>
+                                    <th>Employee</th>
+                                    <th>Department</th>
+                                    <th>Position</th>
+                                    <th>Hire Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="employeeTableBody">
+                                <tr>
+                                    <td colspan="6">Loading employees...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="employeeResults" id="employeeResults"></p>
+                </div>
+
+                <!-- ========== Add / Edit Employee Form ========== -->
+                <div class="employeeModal" id="employeeModal">
+                    <div class="employeeModalContent">
+                        <div class="employeeModalHeader">
+                            <h3 id="employeeFormTitle">Add Employee</h3>
+                            <button type="button" id="closeEmployeeForm" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+
+                        <form id="employeeForm">
+                            <input type="hidden" id="employeeId">
+
+                            <div class="employeeFormGrid">
+                                <div class="employeeFormGroup">
+                                    <label for="employeeName">Full Name</label>
+                                    <input id="employeeName" type="text" required>
+                                </div>
+
+                                <div class="employeeFormGroup">
+                                    <label for="employeeEmail">Email</label>
+                                    <input id="employeeEmail" type="email" required>
+                                </div>
+
+                                <div class="employeeFormGroup">
+                                    <label for="employeePosition">Position</label>
+                                    <input id="employeePosition" type="text" required>
+                                </div>
+
+                                <div class="employeeFormGroup">
+                                    <label for="employeeDepartment">Department</label>
+                                    <select id="employeeDepartment" required>
+                                        <option value="">Select Department</option>
+                                    </select>
+                                </div>
+
+                                <div class="employeeFormGroup">
+                                    <label for="employeeHireDate">Hire Date</label>
+                                    <input id="employeeHireDate" type="date" required>
+                                </div>
+
+                                <div class="employeeFormGroup">
+                                    <label for="employeeStatus">Status</label>
+                                    <select id="employeeStatus" required>
+                                        <option value="Active">Active</option>
+                                        <option value="On Leave">On Leave</option>
+                                        <option value="Inactive">Inactive</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <p class="employeeFormMessage" id="employeeFormMessage"></p>
+
+                            <div class="employeeFormActions">
+                                <button type="button" id="cancelEmployeeForm">Cancel</button>
+                                <button type="submit" class="saveEmployeeBtn">Save Employee</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+      <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+     <!-- Employees JavaScript -->
+    <script src="js/employees.js"></script>
+</body>
+</html>
