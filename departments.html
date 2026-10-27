@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Departments CSS -->
+    <link rel="stylesheet" href="css/departments.css">
+    <link rel="icon" href="assets/favicon.png">
+    <title>Departments | NexaHR</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ========== Sidebar ========== -->
+        <aside>
+            <div class="close">
+                <i class="fa-solid fa-x"></i>
+            </div>
+
+            <a href="" class="logo">
+                <div class="logoImg">
+                    <img src="assets/logo.png" alt="logo">
+                </div>
+                <span>NexaHR</span>
+            </a>
+
+            <nav>
+                <h4>main</h4>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="employees.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span>employees</span>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="departments.html">
+                            <i class="fa-solid fa-hand-holding-hand"></i>
+                            <span>departments</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="attendance.html">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>attendance</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="leaveRequests.html">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>leave requests</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reports.html">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <span>reports</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <h4>others</h4>
+                <ul>
+                    <li class="sideBarNotifi">
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            <span>notifications</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="user">
+                <div class="info">
+                    <div class="avatar">
+                        <img src="assets/avatar.png" alt="admin">
+                    </div>
+
+                    <div class="name">
+                        <p>ahmed hassan</p>
+                        <span>admin</span>
+                    </div>
+                </div>
+
+                <a href="">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ========== Main Content ========== -->
+        <main>
+             <header>
+                <div class="left">
+                    <div class="big">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ========== Global Employee Search ========== -->
+                    <div class="search">
+                        <i class="fa-brands fa-sistrix"></i>
+
+                        <input
+                            type="search"
+                            id="globalSearch"
+                            placeholder="Search employees..."
+                            autocomplete="off"
+                            aria-label="Search employees"
+                            aria-controls="searchResults"
+                            aria-expanded="false"
+                        >
+
+                        <div
+                            class="searchResults"
+                            id="searchResults"
+                            role="listbox"
+                            aria-label="Employee search results"
+                        ></div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="notifi">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+
+                    <div class="userInfo">
+                        <div
+                            class="userInfo-trigger"
+                            aria-expanded="false"
+                            aria-label="Open user menu"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <div class="avatar">
+                                <img src="assets/avatar.png" alt="Admin">
+                            </div>
+
+                            <div class="user-links">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="drop-nav">
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Departments ========== -->
+            <section class="departmentsPage">
+
+                <div class="departmentsTitle">
+                    <div>
+                         <div class="departmentsBreadcrumb">
+                            <a href="index.html">Dashboard</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>Departments</span>
+                        </div>
+                        <h2>Departments</h2>
+                        <p>Manage your company's departments and budgets.</p>
+                    </div>
+
+                    <button type="button" class="addDepartmentBtn" id="addDepartmentBtn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Department
+                    </button>
+                </div>
+
+                <!-- Department Statistics -->
+                <div class="departmentStats">
+                    <div class="departmentStat">
+                        <div class="statIcon purple">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <div>
+                            <p>Total Departments</p>
+                            <h3 id="totalDepartments">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="departmentStat">
+                        <div class="statIcon green">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <div>
+                            <p>Total Employees</p>
+                            <h3 id="totalDepartmentEmployees">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="departmentStat">
+                        <div class="statIcon orange">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+
+                        <div>
+                            <p>Total Budget</p>
+                            <h3 id="totalDepartmentBudget">0</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departments List -->
+                <div class="departmentsContent">
+                    <div class="departmentsToolbar">
+                        <div>
+                            <h3>All Departments</h3>
+                            <p>Overview of every department in your company.</p>
+                        </div>
+
+                        <div class="departmentSearch">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input
+                                type="search"
+                                id="departmentSearch"
+                                placeholder="Search departments..."
+                            >
+                        </div>
+                    </div>
+
+                    <div class="departmentGrid" id="departmentGrid">
+                        <p class="departmentMessage">Loading departments...</p>
+                    </div>
+
+                    <p class="departmentResults" id="departmentResults"></p>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- ========== Add / Edit Department Modal ========== -->
+    <div class="departmentModal" id="departmentModal">
+        <div class="departmentModalContent">
+
+            <div class="departmentModalHeader">
+                <div>
+                    <h3 id="departmentModalTitle">Add Department</h3>
+                    <p>Enter the department information below.</p>
+                </div>
+
+                <button type="button" id="closeDepartmentModal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form id="departmentForm">
+                <div class="departmentFormGroup">
+                    <label for="departmentName">Department Name</label>
+                    <input type="text" id="departmentName" required>
+                </div>
+
+                <div class="departmentFormGroup">
+                    <label for="departmentManager">Department Manager</label>
+                    <input type="text" id="departmentManager" required>
+                </div>
+
+                <div class="departmentFormGroup">
+                    <label for="departmentLocation">Location</label>
+                    <input type="text" id="departmentLocation" required>
+                </div>
+
+                <div class="departmentFormGroup">
+                    <label for="departmentBudget">Budget</label>
+                    <input type="number" id="departmentBudget" min="0" required>
+                </div>
+
+                <p class="departmentFormMessage" id="departmentFormMessage"></p>
+
+                <div class="departmentFormActions">
+                    <button type="button" class="cancelDepartmentBtn" id="cancelDepartmentModal">
+                        Cancel
+                    </button>
+
+                    <button type="submit" class="addDepartmentBtn">
+                        Save Department
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Departments JavaScript -->
+    <script src="js/departments.js"></script>
+</body>
+</html>
