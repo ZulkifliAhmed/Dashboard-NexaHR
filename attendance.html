@@ -1,0 +1,369 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Attendance CSS -->
+    <link rel="stylesheet" href="css/attendance.css">
+    <link rel="icon" href="assets/favicon.png">
+    <title>Attendance | NexaHR</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ========== Sidebar ========== -->
+        <aside>
+            <div class="close">
+                <i class="fa-solid fa-x"></i>
+            </div>
+
+            <a href="index.html" class="logo">
+                <div class="logoImg">
+                    <img src="assets/logo.png" alt="logo">
+                </div>
+                <span>NexaHR</span>
+            </a>
+
+            <nav>
+                <h4>main</h4>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="employees.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span>employees</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="departments.html">
+                            <i class="fa-solid fa-hand-holding-hand"></i>
+                            <span>departments</span>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="attendance.html">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>attendance</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="leaveRequests.html">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>leave requests</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reports.html">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <span>reports</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <h4>others</h4>
+                <ul>
+                    <li class="sideBarNotifi">
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            <span>notifications</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="user">
+                <div class="info">
+                    <div class="avatar">
+                        <img src="assets/avatar.png" alt="admin">
+                    </div>
+
+                    <div class="name">
+                        <p>ahmed hassan</p>
+                        <span>admin</span>
+                    </div>
+                </div>
+
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ========== Main Content ========== -->
+        <main>
+             <header>
+                <div class="left">
+                    <div class="big">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ========== Global Employee Search ========== -->
+                    <div class="search">
+                        <i class="fa-brands fa-sistrix"></i>
+
+                        <input
+                            type="search"
+                            id="globalSearch"
+                            placeholder="Search employees..."
+                            autocomplete="off"
+                            aria-label="Search employees"
+                            aria-controls="searchResults"
+                            aria-expanded="false"
+                        >
+
+                        <div
+                            class="searchResults"
+                            id="searchResults"
+                            role="listbox"
+                            aria-label="Employee search results"
+                        ></div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="notifi">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+
+                    <div class="userInfo">
+                        <div
+                            class="userInfo-trigger"
+                            aria-expanded="false"
+                            aria-label="Open user menu"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <div class="avatar">
+                                <img src="assets/avatar.png" alt="Admin">
+                            </div>
+
+                            <div class="user-links">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="drop-nav">
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Attendance Page ========== -->
+            <section class="attendancePage">
+
+                <!-- Page Title -->
+                <div class="attendanceTitle">
+                    <div>
+                        <div class="attendanceBreadcrumb">
+                            <a href="index.html">Dashboard</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>Attendance</span>
+                        </div>
+                        <h2>Attendance</h2>
+                        <p class="attendanceSubtitle">
+                            Track employee attendance and working hours.
+                        </p>
+                    </div>
+
+                    <button class="exportAttendanceBtn" id="exportAttendanceBtn" type="button">
+                        <i class="fa-solid fa-download"></i>
+                        Export CSV
+                    </button>
+                </div>
+
+                <!-- Attendance Statistics -->
+                <div class="attendanceStats">
+
+                    <div class="attendanceStat">
+                        <div class="attendanceStatIcon purple">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+
+                        <div>
+                            <p>Total Records</p>
+                            <h3 id="totalAttendance">0</h3>
+                            <span>Attendance entries</span>
+                        </div>
+                    </div>
+
+                    <div class="attendanceStat">
+                        <div class="attendanceStatIcon green">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+
+                        <div>
+                            <p>Present</p>
+                            <h3 id="presentCount">0</h3>
+                            <span>Employees present</span>
+                        </div>
+                    </div>
+
+                    <div class="attendanceStat">
+                        <div class="attendanceStatIcon orange">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <p>Late</p>
+                            <h3 id="lateCount">0</h3>
+                            <span>Late arrivals</span>
+                        </div>
+                    </div>
+
+                    <div class="attendanceStat">
+                        <div class="attendanceStatIcon red">
+                            <i class="fa-solid fa-user-xmark"></i>
+                        </div>
+
+                        <div>
+                            <p>Absent</p>
+                            <h3 id="absentCount">0</h3>
+                            <span>Absent records</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Attendance Table -->
+                <div class="attendanceContent">
+
+                    <div class="attendanceContentHeader">
+                        <div>
+                            <h3>Attendance Records</h3>
+                            <p>Review and filter employee attendance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Search and Filters -->
+                    <div class="attendanceToolbar">
+
+                        <div class="attendanceSearch">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input
+                                type="search"
+                                id="attendanceSearch"
+                                placeholder="Search employee, ID or department..."
+                            >
+                        </div>
+
+                        <select id="statusFilter" aria-label="Filter by status">
+                            <option value="">All statuses</option>
+                            <option value="Present">Present</option>
+                            <option value="Late">Late</option>
+                            <option value="Absent">Absent</option>
+                            <option value="On Leave">On Leave</option>
+                        </select>
+
+                        <select id="departmentFilter" aria-label="Filter by department">
+                            <option value="">All departments</option>
+                        </select>
+
+                        <input
+                            type="date"
+                            id="attendanceDate"
+                            aria-label="Filter by date"
+                        >
+
+                        <button id="clearAttendanceFilters" type="button">
+                            Clear
+                        </button>
+
+                    </div>
+
+                    <!-- Results Information -->
+                    <div class="attendanceResults">
+                        <p id="attendanceResultsText">Loading attendance records...</p>
+                    </div>
+
+                    <!-- Table -->
+                    <div class="attendanceTableWrapper">
+                        <table class="attendanceTable">
+                            <thead>
+                                <tr>
+                                    <th>Record ID</th>
+                                    <th>Employee</th>
+                                    <th>Department</th>
+                                    <th>Date</th>
+                                    <th>Check In</th>
+                                    <th>Check Out</th>
+                                    <th>Hours</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="attendanceTableBody">
+                                <tr>
+                                    <td colspan="8" class="attendanceLoading">
+                                        Loading attendance records...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="attendanceEmpty" id="attendanceEmpty" hidden>
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                        <h3>No attendance records found</h3>
+                        <p>Try changing your search or filter options.</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Attendance JavaScript -->
+    <script src="js/attendance.js"></script>
+</body>
+</html>
