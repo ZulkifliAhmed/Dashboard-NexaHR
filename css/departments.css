@@ -1,0 +1,510 @@
+
+/* ========== Departments ========== */
+
+.departmentsPage {
+    padding: 30px 20px;
+    color: var(--dark-color);
+}
+
+.departmentsTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.departmentsBreadcrumb{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+.departmentsBreadcrumb a {
+    color: var(--text-color);
+    transition: var(--main-transition);
+}
+
+.departmentsBreadcrumb a:hover {
+    color: var(--bulle-color);
+}
+
+.departmentsBreadcrumb i {
+    font-size: 10px;
+}
+
+.departmentsTitle h2 {
+    margin-bottom: 5px;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+
+.departmentsTitle p,
+.departmentsToolbar p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.addDepartmentBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 7px;
+    background-color: var(--bulle-color);
+    color: var(--primary-color);
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.addDepartmentBtn:hover {
+    opacity: .85;
+}
+
+/* ========== Department Statistics ========== */
+
+.departmentStats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.departmentStat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.statIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.statIcon.purple {
+    background-color: #eef2ff;
+    color: var(--bulle-color);
+}
+
+.statIcon.green {
+    background-color: #d1fae5;
+    color: var(--success-color);
+}
+
+.statIcon.orange {
+    background-color: #fef3c7;
+    color: var(--warning-clor);
+}
+
+.departmentStat p {
+    margin-bottom: 7px;
+    color: var(--text-color);
+    font-size: 13px;
+}
+
+.departmentStat h3 {
+    font-size: 22px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+/* ========== Departments Content ========== */
+
+.departmentsContent {
+    padding: 22px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.departmentsToolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.departmentsToolbar h3 {
+    margin-bottom: 6px;
+}
+
+.departmentSearch {
+    position: relative;
+    width: 260px;
+    max-width: 100%;
+}
+
+.departmentSearch i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    font-size: 13px;
+}
+
+.departmentSearch input {
+    width: 100%;
+    padding: 11px 12px 11px 35px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    font-family: inherit;
+    font-size: 12px;
+    transition: .3s ease;
+}
+
+.departmentSearch input:focus {
+    border-color: var(--bulle-color);
+}
+
+/* ========== Department Cards ========== */
+
+.departmentGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.departmentCard {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    transition: .3s ease;
+}
+
+.departmentCard:hover {
+    border-color: var(--bulle-color);
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+}
+
+.departmentCardTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.departmentCardIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: #eef2ff;
+    color: var(--bulle-color);
+    font-size: 18px;
+}
+
+.departmentId {
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 11px;
+}
+
+.departmentCard h4 {
+    margin: 17px 0 5px;
+    color: var(--dark-color);
+    font-size: 15px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.departmentCardSubtitle {
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.departmentDetails {
+    display: grid;
+    gap: 13px;
+    margin-top: 18px;
+    padding-top: 17px;
+    border-top: 1px solid var(--border-color);
+}
+
+.departmentDetail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.departmentDetail .detailLabel {
+    flex-shrink: 0;
+    color: var(--text-color);
+}
+
+.departmentDetail .detailValue {
+    color: var(--dark-color);
+    font-weight: 500;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.departmentEmployeeCount {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--bulle-color);
+}
+
+.departmentCardActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.departmentCardActions button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.departmentCardActions .editDepartment:hover {
+    border-color: var(--bulle-color);
+    color: var(--bulle-color);
+}
+
+.departmentCardActions .deleteDepartment {
+    color: var(--danger-color);
+}
+
+.departmentCardActions .deleteDepartment:hover {
+    border-color: var(--danger-color);
+    background-color: #fef2f2;
+}
+
+.departmentResults {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.departmentMessage {
+    grid-column: 1 / -1;
+    padding: 25px 10px;
+    color: var(--text-color);
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ========== Department Modal ========== */
+
+.departmentModal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(15, 23, 42, .5);
+}
+
+.departmentModal.show {
+    display: flex;
+}
+
+.departmentModalContent {
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.departmentModalHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.departmentModalHeader h3 {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.departmentModalHeader p {
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+#closeDepartmentModal {
+    border: none;
+    background: none;
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.departmentFormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 17px;
+}
+
+.departmentFormGroup label {
+    color: var(--dark-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.departmentFormGroup input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.departmentFormGroup input:focus {
+    border-color: var(--bulle-color);
+}
+
+.departmentFormMessage {
+    color: var(--danger-color);
+    font-size: 12px;
+}
+
+.departmentFormActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.departmentFormActions button {
+    font-family: inherit;
+}
+
+.cancelDepartmentBtn {
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* ========== Responsive ========== */
+
+@media (max-width: 1199.98px) {
+    .departmentGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .departmentStats {
+        gap: 12px;
+    }
+
+    .departmentStat {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .departmentsPage {
+        padding: 25px 15px;
+    }
+
+    .departmentsTitle {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .departmentsBreadcrumb{
+        font-size: 11px;
+    }
+    
+    .departmentStats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .departmentsToolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .departmentSearch {
+        width: 100%;
+    }
+
+    .departmentsContent {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .departmentStats,
+    .departmentGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .departmentStat h3 {
+        font-size: 20px;
+    }
+
+    .departmentCard {
+        padding: 16px;
+    }
+
+    .departmentModalContent {
+        padding: 18px;
+    }
+}
