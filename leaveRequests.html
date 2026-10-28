@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Leave Requests CSS -->
+    <link rel="stylesheet" href="css/leaveRequests.css">
+    <link rel="icon" href="assets/favicon.png">
+    <title>Leave Requests | NexaHR</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ========== Sidebar ========== -->
+        <aside>
+            <div class="close">
+                <i class="fa-solid fa-x"></i>
+            </div>
+
+            <a href="index.html" class="logo">
+                <div class="logoImg">
+                    <img src="assets/logo.png" alt="logo">
+                </div>
+                <span>NexaHR</span>
+            </a>
+
+            <nav>
+                <h4>main</h4>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="employees.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span>employees</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="departments.html">
+                            <i class="fa-solid fa-hand-holding-hand"></i>
+                            <span>departments</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="attendance.html">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>attendance</span>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="leaveRequests.html">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>leave requests</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reports.html">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <span>reports</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <h4>others</h4>
+                <ul>
+                    <li class="sideBarNotifi">
+                        <a href="notifications.html">
+                            <i class="fa-regular fa-bell"></i>
+                            <span>notifications</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="user">
+                <div class="info">
+                    <div class="avatar">
+                        <img src="assets/avatar.png" alt="admin">
+                    </div>
+
+                    <div class="name">
+                        <p>ahmed hassan</p>
+                        <span>admin</span>
+                    </div>
+                </div>
+
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ========== Main Content ========== -->
+        <main>
+             <header>
+                <div class="left">
+                    <div class="big">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ========== Global Employee Search ========== -->
+                    <div class="search">
+                        <i class="fa-brands fa-sistrix"></i>
+
+                        <input
+                            type="search"
+                            id="globalSearch"
+                            placeholder="Search employees..."
+                            autocomplete="off"
+                            aria-label="Search employees"
+                            aria-controls="searchResults"
+                            aria-expanded="false"
+                        >
+
+                        <div
+                            class="searchResults"
+                            id="searchResults"
+                            role="listbox"
+                            aria-label="Employee search results"
+                        ></div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="notifi">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+
+                    <div class="userInfo">
+                        <div
+                            class="userInfo-trigger"
+                            aria-expanded="false"
+                            aria-label="Open user menu"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <div class="avatar">
+                                <img src="assets/avatar.png" alt="Admin">
+                            </div>
+
+                            <div class="user-links">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="drop-nav">
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Leave Requests Page ========== -->
+            <section class="leavePage">
+
+                <!-- Page Title -->
+                <div class="leaveTitle">
+                    <div>
+                         <div class="leaveBreadcrumb">
+                            <a href="index.html">Dashboard</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>Leave Requests</span>
+                        </div>
+                        <h2>Leave Requests</h2>
+                        <p class="leaveSubtitle">
+                            Review employee leave applications and manage approvals.
+                        </p>
+                    </div>
+
+                    <div class="leaveTitleIcon">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                </div>
+
+                <!-- Statistics -->
+                <div class="leaveStats">
+
+                    <div class="leaveStat">
+                        <div class="leaveStatIcon purple">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="leaveStatInfo">
+                            <p>Total Requests</p>
+                            <h3 id="totalRequests">0</h3>
+                            <span>All applications</span>
+                        </div>
+                    </div>
+
+                    <div class="leaveStat">
+                        <div class="leaveStatIcon orange">
+                            <i class="fa-regular fa-hourglass-half"></i>
+                        </div>
+                        <div class="leaveStatInfo">
+                            <p>Pending</p>
+                            <h3 id="pendingRequests">0</h3>
+                            <span>Waiting for review</span>
+                        </div>
+                    </div>
+
+                    <div class="leaveStat">
+                        <div class="leaveStatIcon green">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="leaveStatInfo">
+                            <p>Approved</p>
+                            <h3 id="approvedRequests">0</h3>
+                            <span>Approved applications</span>
+                        </div>
+                    </div>
+
+                    <div class="leaveStat">
+                        <div class="leaveStatIcon red">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="leaveStatInfo">
+                            <p>Rejected</p>
+                            <h3 id="rejectedRequests">0</h3>
+                            <span>Rejected applications</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Leave Summary -->
+                <div class="leaveSummary">
+                    <div class="leaveSummaryText">
+                        <div class="leaveSummaryIcon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div>
+                            <h3>Leave Management</h3>
+                            <p>Manage requests, review details, and update their status.</p>
+                        </div>
+                    </div>
+
+                    <div class="leaveSummaryTotal">
+                        <span>Pending review</span>
+                        <strong id="pendingSummary">0 requests</strong>
+                    </div>
+                </div>
+
+                <!-- Requests Table -->
+                <div class="leaveContent">
+
+                    <div class="leaveContentHeader">
+                        <div>
+                            <h3>All Leave Requests</h3>
+                            <p>Search and filter employee applications.</p>
+                        </div>
+                    </div>
+
+                    <!-- Search and Filters -->
+                    <div class="leaveToolbar">
+
+                        <div class="leaveSearch">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input
+                                type="search"
+                                id="leaveSearch"
+                                placeholder="Search employee, ID or department..."
+                                aria-label="Search leave requests"
+                            >
+                        </div>
+
+                        <select id="leaveStatusFilter" aria-label="Filter by status">
+                            <option value="">All statuses</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Approved">Approved</option>
+                            <option value="Rejected">Rejected</option>
+                        </select>
+
+                        <select id="leaveTypeFilter" aria-label="Filter by leave type">
+                            <option value="">All leave types</option>
+                        </select>
+
+                        <button type="button" id="clearLeaveFilters">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            Clear
+                        </button>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="leaveTableWrapper">
+                        <table class="leaveTable">
+                            <thead>
+                                <tr>
+                                    <th>Employee</th>
+                                    <th>Leave Type</th>
+                                    <th>Leave Period</th>
+                                    <th>Days</th>
+                                    <th>Reason</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="leaveTableBody">
+                                <tr>
+                                    <td colspan="7" class="leaveLoading">
+                                        Loading leave requests...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                     <!-- Results Information -->
+                    <div class="leaveResults">
+                        <p id="leaveResultsText">Loading leave requests...</p>
+                    </div>
+                    
+                    <!-- Empty State -->
+                    <div class="leaveEmpty" id="leaveEmpty" hidden>
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                        <h3>No leave requests found</h3>
+                        <p>Try changing your search or filter options.</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Leave Requests JavaScript -->
+    <script src="js/leaveRequests.js"></script>
+</body>
+</html>
