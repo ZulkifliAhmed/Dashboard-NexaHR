@@ -1,0 +1,487 @@
+
+/* ========== Settings Page ========== */
+
+.settingsPage {
+    padding: 30px 20px;
+}
+
+/* ========== Page Title ========== */
+
+.settingsTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.settingsBreadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+.settingsBreadcrumb a {
+    color: var(--text-color);
+    transition: var(--main-transition);
+}
+
+.settingsBreadcrumb a:hover {
+    color: var(--bulle-color);
+}
+
+.settingsBreadcrumb i {
+    font-size: 10px;
+}
+
+.settingsTitle h2 {
+    margin-bottom: 7px;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+
+.settingsTitle p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.settingsTitleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    color: var(--bulle-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.settingsTitleIcon i {
+    font-size: 22px;
+}
+
+/* ========== Settings Cards ========== */
+
+.settingsCard {
+    padding: 22px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.settingsCardTitle {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.settingsCardTitle h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.settingsCardTitle p {
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.settingsIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.settingsIcon i {
+    font-size: 18px;
+}
+
+.settingsIcon.purple {
+    color: var(--bulle-color);
+    background-color: #EEF2FF;
+}
+
+.settingsIcon.blue {
+    color: #3B82F6;
+    background-color: #EFF6FF;
+}
+
+.settingsIcon.orange {
+    color: var(--warning-clor);
+    background-color: #FFFBEB;
+}
+
+.settingsIcon.green {
+    color: var(--success-color);
+    background-color: #ECFDF5;
+}
+
+.settingsIcon.red {
+    color: var(--danger-color);
+    background-color: #FEF2F2;
+}
+
+/* ========== Profile Information ========== */
+
+.profileInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.profileAvatar {
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+}
+
+.profileInfo h4 {
+    margin-bottom: 4px;
+    font-size: 15px;
+    color: var(--dark-color);
+}
+
+.profileInfo p {
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: var(--bulle-color);
+}
+
+.profileInfo span {
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+/* ========== Form Fields ========== */
+
+.settingsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.settingsField {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.settingsField label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.settingsField input,
+.settingsField select {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    outline: none;
+    font-family: inherit;
+    font-size: 13px;
+    color: var(--dark-color);
+    background-color: var(--background-color);
+    transition: border-color .2s ease;
+}
+
+.settingsField input::placeholder {
+    color: var(--text-color);
+    opacity: .8;
+}
+
+.settingsField input:focus,
+.settingsField select:focus {
+    border-color: var(--bulle-color);
+}
+
+/* ========== Notification Options ========== */
+
+.settingsOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.settingsOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.settingsOption:first-child {
+    padding-top: 0;
+}
+
+.settingsOption:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.settingsOption h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.settingsOption p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+/* ========== Toggle Switch ========== */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.switchSlider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: var(--border-color);
+    transition: .3s;
+}
+
+.switchSlider::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    bottom: 3px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: .3s;
+}
+
+.switch input:checked + .switchSlider {
+    background-color: var(--bulle-color);
+}
+
+.switch input:checked + .switchSlider::before {
+    transform: translateX(19px);
+}
+
+.switch input:focus-visible + .switchSlider {
+    outline: 2px solid var(--bulle-color);
+    outline-offset: 3px;
+}
+
+/* ========== Security ========== */
+
+.securityNote {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.securityNote i {
+    margin-top: 3px;
+    color: var(--bulle-color);
+}
+
+/* ========== Buttons ========== */
+
+.settingsActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.settingsActions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 11px 18px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .2s ease;
+}
+
+.resetBtn {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-color: var(--border-color) !important;
+}
+
+.resetBtn:hover {
+    color: var(--dark-color);
+    background-color: var(--background-color);
+}
+
+.saveBtn {
+    color: var(--primary-color);
+    background-color: var(--bulle-color);
+}
+
+.saveBtn:hover {
+    opacity: .9;
+    transform: translateY(-1px);
+}
+
+.settingsActions button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+/* ========== Status Message ========== */
+
+.settingsMessage {
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: right;
+    color: var(--success-color);
+}
+
+.settingsMessage.error {
+    color: var(--danger-color);
+}
+
+/* ========== Responsive ========== */
+
+@media (max-width: 767.98px) {
+    .settingsPage {
+        padding: 25px 15px;
+    }
+
+    .settingsCard {
+        padding: 18px;
+    }
+
+    .settingsGrid {
+        gap: 18px;
+    }
+
+    .settingsTitle h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .settingsPage {
+        padding: 20px 10px;
+    }
+    
+    .settingsBreadcrumb{
+        font-size: 11px;
+    }
+
+    .settingsTitle h2 {
+        font-size: 18px;
+    }
+
+    .settingsTitle p {
+        font-size: 12px;
+    }
+
+    .settingsTitleIcon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .settingsTitleIcon i {
+        font-size: 18px;
+    }
+
+    .settingsCard {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .settingsCardTitle {
+        gap: 10px;
+    }
+
+    .settingsCardTitle h3 {
+        font-size: 14px;
+    }
+
+    .settingsCardTitle p {
+        font-size: 11px;
+    }
+
+    .settingsIcon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .settingsGrid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .settingsField input,
+    .settingsField select {
+        padding: 11px;
+        font-size: 12px;
+    }
+
+    .settingsOption {
+        gap: 12px;
+    }
+
+    .settingsOption h4 {
+        font-size: 12px;
+    }
+
+    .settingsOption p {
+        font-size: 11px;
+    }
+
+    .settingsActions {
+        gap: 8px;
+    }
+
+    .settingsActions button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+}
