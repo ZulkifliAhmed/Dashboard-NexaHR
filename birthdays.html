@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Birthdays CSS -->
+    <link rel="stylesheet" href="css/birthdays.css">
+    <link rel="icon" href="assets/favicon.png">
+    <title>Upcoming Birthdays | NexaHR</title>
+</head>
+<body>
+    <div class="birthdaysPage">
+        <div class="birthdaysHeader">
+            <div>
+                <h1>Employee Birthdays</h1>
+                <p>Keep track of your team's special days.</p>
+            </div>
+            <a href="index.html" class="backDashboard">
+                <i class="fa-solid fa-arrow-left"></i>
+                Dashboard
+            </a>
+        </div>
+        <div class="birthdayStats">
+            <div class="birthdayStat">
+                <div>
+                    <p>Total Employees</p>
+                    <h2 id="totalEmployees">0</h2>
+                </div>
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="birthdayStat">
+                <div>
+                    <p>Birthdays This Month</p>
+                    <h2 id="monthlyBirthdays">0</h2>
+                </div>
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="birthdayStat">
+                <div>
+                    <p>Upcoming Birthdays</p>
+                    <h2 id="upcomingCount">0</h2>
+                </div>
+                <i class="fa-solid fa-gift"></i>
+            </div>
+        </div>
+        <div class="birthdaySection">
+            <div class="birthdaySectionHeader">
+                <div>
+                    <h2>All Birthdays</h2>
+                    <p>Employees sorted by their next birthday.</p>
+                </div>
+                <div class="birthdaySearch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="search"
+                        id="birthdaySearch"
+                        placeholder="Search employees..."
+                    >
+                </div>
+            </div>
+            <div class="birthdayTableWrapper">
+                <table class="birthdayTable">
+                    <thead>
+                        <tr>
+                            <th>Employee</th>
+                            <th>Department</th>
+                            <th>Birthday</th>
+                            <th>Next Birthday</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="birthdayTableBody">
+                        <tr>
+                            <td colspan="5">Loading employees...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="birthdayResults" id="birthdayResults"></p>
+        </div>
+    </div>
+    <script src="js/birthdays.js"></script>
+</body>
+</html>
