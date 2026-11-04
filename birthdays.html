@@ -17,6 +17,186 @@
     <title>Upcoming Birthdays | NexaHR</title>
 </head>
 <body>
+    <div class="container">
+        <!-- ========== Sidebar ========== -->
+        <aside>
+        <div class="close">
+        <i class="fa-solid fa-x"></i>
+        </div>
+
+        <a href="index.html" class="logo">
+        <div class="logoImg">
+            <img src="assets/logo.png" alt="NexaHR logo">
+        </div>
+        <span>NexaHR</span>
+        </a>
+
+        <nav>
+        <h4>main</h4>
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="employees.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span>employees</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="departments.html">
+                    <i class="fa-solid fa-hand-holding-hand"></i>
+                    <span>departments</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance.html">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>attendance</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="leaveRequests.html">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>leave requests</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>reports</span>
+                </a>
+            </li>
+        </ul>
+
+        <h4>others</h4>
+        <ul>
+            <li class="sideBarNotifi">
+                <a href="notifications.html">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>notifications</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>settings</span>
+                </a>
+            </li>
+        </ul>
+        </nav>
+
+        <div class="user">
+        <div class="info">
+            <div class="avatar">
+                <img src="assets/avatar.png" alt="Admin">
+            </div>
+
+            <div class="name">
+                <p>ahmed hassan</p>
+                <span>admin</span>
+            </div>
+        </div>
+
+        <a href="#" class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>logout</span>
+        </a>
+        </div>
+        </aside>
+        <!-- ========== Main Content ========== -->
+        <main>
+            <header>
+            <div class="left">
+            <div class="big">
+            <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="mobile">
+            <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- ========== Global Employee Search ========== -->
+            <div class="search">
+            <i class="fa-brands fa-sistrix"></i>
+
+            <input
+                type="search"
+                id="globalSearch"
+                placeholder="Search employees..."
+                autocomplete="off"
+                aria-label="Search employees"
+                aria-controls="searchResults"
+                aria-expanded="false"
+            >
+
+            <div
+                class="searchResults"
+                id="searchResults"
+                role="listbox"
+                aria-label="Employee search results"
+            ></div>
+            </div>
+            </div>
+
+            <div class="right">
+            <div class="notifi">
+            <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div class="userInfo">
+            <div
+                class="userInfo-trigger"
+                aria-expanded="false"
+                aria-label="Open user menu"
+                role="button"
+                tabindex="0"
+            >
+                <div class="avatar">
+                    <img src="assets/avatar.png" alt="Admin">
+                </div>
+
+                <div class="user-links">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <ul class="drop-nav">
+                <li>
+                    <a href="settings.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="logout">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            </div>
+            </header>
+
+            
     <div class="birthdaysPage">
         <div class="birthdaysHeader">
             <div>
@@ -87,6 +267,11 @@
             <p class="birthdayResults" id="birthdayResults"></p>
         </div>
     </div>
+        </main>
+    </div>
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Birthdays JavaScript -->
     <script src="js/birthdays.js"></script>
 </body>
 </html>
