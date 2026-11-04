@@ -676,77 +676,6 @@ main header .userInfo .drop-nav li:last-child a:hover i {
     text-transform: capitalize;
 }
 
-/* ========== Cards ========== */
-.carts,
-.carts .cart {
-    display: flex;
-    align-items: center;
-}
-
-.carts {
-    justify-content: space-between;
-}
-
-.carts .cart {
-    min-width: 250px;
-    padding: 15px;
-    border-radius: 10px;
-    gap: 15px;
-    background-color: var(--primary-color);
-    border: 1px solid var(--border-color);
-    cursor: default;
-    box-shadow: var(--shadow);
-}
-
-.carts .cart .fa-users,
-.carts .cart .fa-user-plus,
-.carts .cart .fa-calendar-days,
-.carts .cart .fa-user-minus {
-    padding: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    color: var(--primary-color);
-}
-
-.carts .cart .fa-users {
-    background-color: var(--bulle-color);
-}
-
-.carts .cart .fa-user-plus {
-    background-color: var(--success-color);
-}
-
-.carts .cart .fa-calendar-days {
-    background-color: var(--warning-clor);
-}
-
-.carts .cart .fa-user-minus {
-    background-color: var(--danger-color);
-}
-
-.carts .cart p {
-    font-size: 15px;
-    text-transform: capitalize;
-    color: var(--text-color);
-}
-
-.carts .cart .range {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--dark-color);
-    margin: 5px 0;
-}
-
-.carts .cart span {
-    font-size: 13px;
-    color: var(--success-color);
-}
-
-.carts .cart span.danger {
-    color: var(--danger-color);
-}
-
 /* ========== Media Query ========== */
 
 /* Large Devices: Less than 1200px */
@@ -797,31 +726,6 @@ main header .userInfo .drop-nav li:last-child a:hover i {
         padding: 30px 15px;
     }
 
-    .carts {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .carts .cart {
-        min-width: 250px;
-    }
-
-    .carts .cart .fa-users,
-    .carts .cart .fa-user-plus,
-    .carts .cart .fa-calendar-days,
-    .carts .cart .fa-user-minus {
-        width: 25px;
-        height: 25px;
-    }
-
-    .carts .cart p:last-child {
-        font-size: 8px;
-    }
-
-    .carts .cart .range {
-        font-size: 18px;
-    }
 }
 
 /* Medium Devices: Less than 992px */
