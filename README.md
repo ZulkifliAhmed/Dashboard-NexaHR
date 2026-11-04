@@ -2,11 +2,11 @@
 
 A modern and responsive Human Resource Management Dashboard built using HTML, CSS, and JavaScript. NexaHR helps manage employees, departments, attendance, leave requests, reports, notifications, and company settings through a clean and user-friendly interface.
 
-## 🚀 Live Demo
+##  Live Demo
 
 [View Live Demo](https://zulkifliahmed.github.io/Dashboard-NexaHR/login.html)
 
-## 📸 Screenshots
+##  Screenshots
 
 ### 1. Dashboard
 ![Dashboard](assets/screenshots/dashboard.png)
@@ -38,7 +38,7 @@ A modern and responsive Human Resource Management Dashboard built using HTML, CS
 ### 10. Login
 ![Login](assets/screenshots/login.png)
 
-## ✨ Features
+##  Features
 
 - **Dashboard:** Overview of employee statistics and company activities.
 - **Employees Management:** Add, edit, delete, search, and filter employee records.
@@ -55,7 +55,7 @@ A modern and responsive Human Resource Management Dashboard built using HTML, CS
 - **Logout:** Clear login data and redirect to the login page.
 - **Responsive Design:** Optimized for desktop, tablet, and mobile screens.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - HTML5
 - CSS3
@@ -67,7 +67,7 @@ A modern and responsive Human Resource Management Dashboard built using HTML, CS
 - Google Fonts (Poppins)
 - Git & GitHub
 
-## 📁 Project Structure
+## Project Structure
 
 NexaHR/
 │
@@ -116,7 +116,7 @@ NexaHR/
 ├── login.html
 └── README.md
 
-## 🔐 Demo Login Credentials
+##  Demo Login Credentials
 
 Use the following credentials to access the application:
 
@@ -127,7 +127,7 @@ Use the following credentials to access the application:
 
 **Note:** This is a front-end demo authentication system. It does not use a backend server or secure production authentication.
 
-## ⚙️ Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
 
@@ -143,19 +143,19 @@ Open the project using Visual Studio Code and launch it with the Live Server ext
 
 **Note:** Use a local server to ensure that `data.json` loads correctly through the Fetch API.
 
-## 📊 Data Management
+##  Data Management
 
 - Employee and company data are loaded from `data.json`.
 - LocalStorage is used to persist selected application data.
 - SessionStorage is used to manage temporary login sessions.
 - JavaScript handles data rendering, filtering, searching, and interactions.
 
-## 👨‍💻 Author
+##  Author
 
 **Zulkifli Ahmed**
 
 - GitHub: [@ZulkifliAhmed](https://github.com/ZulkifliAhmed)
 
-## 📄 License
+##  License
 
 This project was developed for educational and portfolio purposes.
