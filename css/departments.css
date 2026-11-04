@@ -71,62 +71,67 @@
 }
 
 /* ========== Department Statistics ========== */
+ /* ========== Department Statistics ========== */
 
 .departmentStats {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    gap: 18px;
     margin-bottom: 25px;
 }
 
 .departmentStat {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 14px;
     min-width: 0;
-    padding: 20px;
-    background-color: var(--primary-color);
+    padding: 20px 15px;
     border: 1px solid var(--border-color);
     border-radius: 10px;
+    background-color: var(--primary-color);
     box-shadow: var(--shadow);
 }
 
-.statIcon {
+.departmentStatIcon {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 45px;
-    height: 45px;
+    padding: 12px;
     border-radius: 10px;
-    font-size: 19px;
+    color: var(--primary-color);
+    font-size: 18px;
 }
 
-.statIcon.purple {
-    background-color: #eef2ff;
-    color: var(--bulle-color);
+.departmentStatIcon.purple {
+    background-color: var(--bulle-color);
 }
 
-.statIcon.green {
-    background-color: #d1fae5;
-    color: var(--success-color);
+.departmentStatIcon.green {
+    background-color: var(--success-color);
 }
 
-.statIcon.orange {
-    background-color: #fef3c7;
-    color: var(--warning-clor);
+.departmentStatIcon.orange {
+    background-color: var(--warning-clor);
 }
 
 .departmentStat p {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     color: var(--text-color);
     font-size: 13px;
 }
 
 .departmentStat h3 {
-    font-size: 22px;
+    margin-bottom: 4px;
+    color: var(--dark-color);
+    font-size: 23px;
     font-weight: 600;
     overflow-wrap: anywhere;
+}
+
+.departmentStat span {
+    color: var(--text-color);
+    font-size: 11px;
 }
 
 /* ========== Departments Content ========== */
@@ -217,9 +222,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 43px;
-    height: 43px;
     flex-shrink: 0;
+    padding: 12px;
     border-radius: 9px;
     background-color: #eef2ff;
     color: var(--bulle-color);

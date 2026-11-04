@@ -11,6 +11,80 @@
     background-color: var(--primary-color);
 }
 
+
+/* ========== Cards ========== */
+.carts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.carts .cart {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    cursor: default;
+    box-shadow: var(--shadow);
+}
+
+.carts .cart .fa-users,
+.carts .cart .fa-user-plus,
+.carts .cart .fa-calendar-days,
+.carts .cart .fa-user-minus {
+    flex-shrink: 0;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+
+.carts .cart .fa-users {
+    background-color: var(--bulle-color);
+}
+
+.carts .cart .fa-user-plus {
+    background-color: var(--success-color);
+}
+
+.carts .cart .fa-calendar-days {
+    background-color: var(--warning-clor);
+}
+
+.carts .cart .fa-user-minus {
+    background-color: var(--danger-color);
+}
+
+.carts .cart .details {
+    min-width: 0;
+}
+
+.carts .cart p {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.carts .cart .range {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin: 5px 0;
+}
+
+.carts .cart span {
+    font-size: 12px;
+    color: var(--success-color);
+}
+
+.carts .cart span.danger {
+    color: var(--danger-color);
+}
+
 /* ========== Charts ========== */
 .charts {
     display: grid;
@@ -109,69 +183,55 @@
     padding: 6px;
     margin: 0;
     list-style: none;
-
     position: absolute;
     top: calc(100% + 8px);
     right: 0;
-
     display: none;
     flex-direction: column;
     gap: 3px;
-
     background-color: var(--primary-color);
     border: 1px solid var(--border-color);
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
-
     z-index: 99;
 }
 
-/* Show dropdown */
 .box .boxItems .details ul.moreDetails.show {
     display: flex;
 }
 
-/* Dropdown items */
 .box .boxItems .details ul.moreDetails li {
     width: 100%;
 }
 
-/* Dropdown links */
 .box .boxItems .details ul.moreDetails li a {
     display: flex;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-
     padding: 9px 12px;
     border-radius: 6px;
-
     font-size: 13px;
     font-weight: 500;
     text-decoration: none;
-
     color: var(--dark-color);
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Edit hover */
 .box .boxItems .details ul.moreDetails li a.editEmployee:hover {
     background-color: #EEF2FF;
     color: #4F46E5;
 }
 
-/* Delete */
 .box .boxItems .details ul.moreDetails li a.deleteEmployee {
     color: var(--danger-color);
 }
 
-/* Delete hover */
 .box .boxItems .details ul.moreDetails li a.deleteEmployee:hover {
     background-color: #FEF2F2;
     color: #DC2626;
 }
 
-/* ========== Birthday Icon ========== */
 .box .boxItems .details .fa-gift {
     font-size: 15px;
     color: var(--danger-color);
@@ -179,13 +239,16 @@
 }
 
 /* ========== Media Query ========== */
-
-/* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .charts,
     .box {
         grid-template-columns: auto 40%;
         gap: 15px;
+    }
+
+    /* Cards Responsive */
+    .carts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .chart {
@@ -222,7 +285,6 @@
     }
 }
 
-/* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .dashboard .calendar input {
         padding: 5px 8px;
@@ -236,8 +298,28 @@
     }
 }
 
-/* Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .carts {
+        gap: 10px;
+    }
+
+    .carts .cart {
+        padding: 12px 8px;
+        gap: 8px;
+    }
+
+    .carts .cart p {
+        font-size: 11px;
+    }
+
+    .carts .cart .range {
+        font-size: 17px;
+    }
+
+    .carts .cart span {
+        font-size: 10px;
+    }
+
     .dashboard .calendar {
         display: none;
     }
@@ -263,8 +345,17 @@
         gap: 10px;
     }
 
-    /* Dropdown on small screens */
     .box .boxItems .details ul.moreDetails {
         min-width: 125px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .carts {
+        grid-template-columns: 1fr;
+    }
+
+    .carts .cart {
+        padding: 15px;
     }
 }

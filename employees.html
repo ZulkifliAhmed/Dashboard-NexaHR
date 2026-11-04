@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <a href="#">
+                <a href="#" class="logout">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <span>logout</span>
                 </a>
@@ -145,9 +145,11 @@
                 </div>
 
                 <div class="right">
-                    <div class="notifi">
+                    <a href="notifications.html">
+                        <div class="notifi">
                         <i class="fa-regular fa-bell"></i>
                     </div>
+                    </a>
 
                     <div class="userInfo">
                         <div
@@ -182,7 +184,7 @@
                             </li>
 
                             <li>
-                                <a href="settings.html">
+                                <a href="#" class="logout">
                                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                                     <span>Logout</span>
                                 </a>
@@ -213,38 +215,56 @@
 
                 <!-- ========== Statistics ========== -->
                 <div class="employeeStats">
-                    <div class="employeeStat">
-                        <div>
-                            <p>Total Employees</p>
-                            <h3 id="totalEmployees">0</h3>
-                        </div>
-                        <i class="fa-solid fa-users"></i>
-                    </div>
 
-                    <div class="employeeStat">
-                        <div>
-                            <p>Active Employees</p>
-                            <h3 id="activeEmployees">0</h3>
-                        </div>
-                        <i class="fa-solid fa-user-check"></i>
-                    </div>
+    <div class="employeeStat">
+        <div class="employeeStatIcon purple">
+            <i class="fa-solid fa-users"></i>
+        </div>
 
-                    <div class="employeeStat">
-                        <div>
-                            <p>On Leave</p>
-                            <h3 id="onLeaveEmployees">0</h3>
-                        </div>
-                        <i class="fa-solid fa-calendar-days"></i>
-                    </div>
+        <div>
+            <p>Total Employees</p>
+            <h3 id="totalEmployees">0</h3>
+            <span>Registered employees</span>
+        </div>
+    </div>
 
-                    <div class="employeeStat">
-                        <div>
-                            <p>Inactive Employees</p>
-                            <h3 id="inactiveEmployees">0</h3>
-                        </div>
-                        <i class="fa-solid fa-user-minus"></i>
-                    </div>
-                </div>
+    <div class="employeeStat">
+        <div class="employeeStatIcon green">
+            <i class="fa-solid fa-user-check"></i>
+        </div>
+
+        <div>
+            <p>Active Employees</p>
+            <h3 id="activeEmployees">0</h3>
+            <span>Currently working</span>
+        </div>
+    </div>
+
+    <div class="employeeStat">
+        <div class="employeeStatIcon orange">
+            <i class="fa-solid fa-calendar-days"></i>
+        </div>
+
+        <div>
+            <p>On Leave</p>
+            <h3 id="onLeaveEmployees">0</h3>
+            <span>Currently on leave</span>
+        </div>
+    </div>
+
+    <div class="employeeStat">
+        <div class="employeeStatIcon red">
+            <i class="fa-solid fa-user-minus"></i>
+        </div>
+
+        <div>
+            <p>Inactive Employees</p>
+            <h3 id="inactiveEmployees">0</h3>
+            <span>Currently inactive</span>
+        </div>
+    </div>
+
+</div>
 
                 <!-- ========== Employee List ========== -->
                 <div class="employeesContent">
