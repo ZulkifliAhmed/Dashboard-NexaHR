@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login | NexaHR</title>
+</head>
+
+<body>
+    <main class="loginPage">
+
+        <!-- Login Information -->
+        <section class="loginInfo">
+
+            <a href="login.html" class="loginLogo">
+                <img src="assets/logo.png" alt="NexaHR Logo">
+            </a>
+
+            <div class="loginInfoContent">
+                <span class="loginTag">HR Management System</span>
+
+                <h1>Manage your team with confidence.</h1>
+
+                <p>
+                    Welcome to NexaHR. Your workspace for managing
+                    employees, attendance, departments, and more.
+                </p>
+
+                <div class="loginFeatures">
+                    <div>
+                        <i class="fa-solid fa-users"></i>
+                        <span>Employee Management</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Attendance Tracking</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Reports & Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="loginCopyright">
+                © 2026 NexaHR. All rights reserved.
+            </p>
+
+        </section>
+
+
+        <!-- Login Form -->
+        <section class="loginFormSection">
+
+            <div class="loginCard">
+
+                <div class="loginHeading">
+                    <h2>Welcome Back!</h2>
+                    <p>Please enter your account details to sign in.</p>
+                </div>
+
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="formGroup">
+                        <label for="email">Email Address</label>
+
+                        <div class="inputGroup">
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                autocomplete="username"
+                                required
+                            >
+                        </div>
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="formGroup">
+                        <label for="password">Password</label>
+
+                        <div class="inputGroup">
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="togglePassword"
+                                id="togglePassword"
+                                aria-label="Show password"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- Remember Me -->
+                    <div class="loginOptions">
+                        <label class="rememberMe">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember me</span>
+                        </label>
+                    </div>
+
+
+                    <!-- Error Message -->
+                    <p class="loginMessage" id="loginMessage" aria-live="polite"></p>
+
+
+                    <!-- Login Button -->
+                    <button type="submit" class="loginBtn" id="loginBtn">
+                        Sign In
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+                <div class="loginFooter">
+                    <p>Secure access to your NexaHR workspace.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>
