@@ -90,10 +90,6 @@
     transition: var(--main-transition);
 }
 
-.leaveStat:hover {
-    transform: translateY(-3px);
-}
-
 .leaveStatIcon {
     display: flex;
     align-items: center;
