@@ -1,3 +1,34 @@
+/* ==============================
+   Authentication
+============================== */
+
+// Redirect to login if the user is not authenticated.
+const isLoggedIn = localStorage.getItem("nexahrLoggedIn") === "true" ||
+    sessionStorage.getItem("nexahrLoggedIn") === "true";
+
+if (!isLoggedIn) {
+    window.location.href = "login.html";
+}
+
+/* ==============================
+   Logout
+============================== */
+
+const logoutButtons = document.querySelectorAll(".logout");
+
+logoutButtons.forEach((button) => {
+    button.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        localStorage.removeItem("nexahrLoggedIn");
+        localStorage.removeItem("nexahrUser");
+
+        sessionStorage.removeItem("nexahrLoggedIn");
+        sessionStorage.removeItem("nexahrUser");
+
+        window.location.href = "login.html";
+    });
+});
 
 /* ==============================
    Toggle Aside
